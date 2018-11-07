@@ -1,0 +1,250 @@
+#content{
+    margin-top: 60px;
+    overflow-x: hidden;
+}
+.has-under-header #content{
+    margin: 0 !important;
+}
+.has-under-header #header{
+    background-color: transparent !important;
+}
+.colored-header #header{
+    background-color: #FC814A !important;
+}
+.under-header-section{
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+    background-image: url("../img/ex_i.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.under-header-section::before{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #ffffff;
+    border-left: 100vw solid transparent;
+    z-index: 2;
+}
+.under-header-section::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #F28C44;
+    opacity: .35;
+    z-index: 1;
+}
+
+.centering-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+}
+.title-home-section{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.group-caracteristicas{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    max-width: 780px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.group-caracteristicas .caracteristica-box{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.download-btn{
+    display: block;
+    width: 250px;
+    height: 50px;
+    background-color: #FC814A;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.flowchart .download-btn{
+    margin-top: 52px;
+}
+/*fluxograma*/
+.flowchart{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.flowchart .vertical-line{
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: black;
+    margin: 5px 0;
+}
+.horizontal-line{
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    background-color: black;
+}
+.flowchart .centered-vertical-line{
+    right: 50%;
+    margin-right: -1px;
+}
+.flowchart .centered-horizontal-line{
+    right: 50%;
+    margin-right: -250px;
+}
+.flowchart .first-line{
+    top: 0px;
+}
+.flowchart .second-line{
+    top: 102px;
+}
+.flowchart .third-line{
+    top: 145px;
+}
+.flowchart .fourth-line{
+    right: 100px;
+    top: 141px;
+}
+.flowchart .fifth-line{
+    left: 100px;
+    top: 141px;
+}
+.flowchart .sixth-line{
+    display: none;
+    top: 0;
+}
+.flowchart .gp-side{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    margin-top: 85px;
+}
+.flowchart .flowchart-side{
+    width: 350px;
+    height: auto;
+    position: relative;
+}
+.flowchart .flowchart-side .flowchart-side-stage{
+    width: auto;
+    height: auto;
+    border-left: solid 2px #F28C44;
+    margin: 10px 0;
+    padding: 10px;
+    overflow: hidden;
+}
+.flowchart .flowchart-side .flowchart-side-stage .bold-text-stage{
+    font-weight: 700;
+    display: block;
+}
+.bold-text-stage-inline{
+    font-weight: 700;
+    display: inline-block;
+}
+.flowchart .flowchart-side .flowchart-side-stage .sub-stage{
+    width: auto;
+    height: auto;
+    border-left: solid 2px #F28C44;
+    margin: 10px 0;
+    padding: 10px;
+    margin-left: 10px;
+}
+.flowchart .flowchart-side .side-of{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    user-select: none;
+}
+.flowchart .flowchart-side .so-windows{
+    color: #4CB7E5;
+    border: solid 2px #4CB7E5;
+    margin-left: 25px;
+    margin: 0px 0 20px 25px;
+}
+.flowchart .flowchart-side .so-linux{
+    color: #59e54c;
+    border: solid 2px #59e54c;
+    margin: 0px 0 20px 172px;
+}
+.flowchart .flowchart-side .btn-link-download{
+    margin: 5px 0;
+    display: block;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: #59e54c;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    word-spacing: 4px;
+    user-select: none;
+}
+
+@media screen and (max-width: 750px){
+    .flowchart .third-line,
+    .flowchart .fourth-line,
+    .flowchart .fifth-line{
+        display: none;
+    }
+    .flowchart .gp-side{
+        margin-top: 52px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .flowchart .flowchart-side{
+        width: 95%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .flowchart .flowchart-side .flowchart-side-stage{
+        width: 95%;
+    }
+    .flowchart .flowchart-side .so-windows{
+        margin: 0px 0 20px 0
+    }
+    .flowchart .flowchart-side .so-linux{
+        margin: 60px 0 20px 0;
+    }
+    .flowchart .sixth-line{
+        display: block;
+    }
+    .flowchart .flowchart-side .btn-link-download{
+        width: 100%;
+    }
+}

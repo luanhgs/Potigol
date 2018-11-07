@@ -1,0 +1,201 @@
+#content{
+    margin-top: 60px;
+    overflow-x: hidden;
+    min-height: calc(100vh - 80px);
+}
+.has-under-header #content{
+    margin: 0 !important;
+}
+.has-under-header #header{
+    background-color: transparent !important;
+}
+.colored-header #header{
+    background-color: #FC814A !important;
+}
+.under-header-section{
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+    background-image: url("../img/ex_i.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.under-header-section::before{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #ffffff;
+    border-left: 100vw solid transparent;
+    z-index: 2;
+}
+.under-header-section::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #F28C44;
+    opacity: .35;
+    z-index: 1;
+}
+
+.centering-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+}
+.title-home-section{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.group-caracteristicas{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    max-width: 780px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.group-caracteristicas .caracteristica-box{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    margin: 5px;
+}
+.steps .download-btn{
+    margin-top: 52px;
+}
+/*fluxograma*/
+.steps{
+    width: 100%;
+    max-width: 840px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.steps .gp-side{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    margin-top: 45px;
+}
+.steps .steps-side{
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    margin: 0 10px;
+    background-color: #f0f8ff;
+    border-radius: 25px;
+}
+.steps .steps-side .steps-side-stage{
+    width: auto;
+    height: auto;
+    border-left: solid 2px #F28C44;
+    margin: 10px 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.steps .steps-side .steps-side-stage:last-child{
+    margin: 10px 10px 30px 10px;
+}
+.steps .steps-side .steps-side-stage .bold-text-stage{
+    font-weight: 700;
+    display: block;
+}
+.bold-text-stage-inline{
+    font-weight: 700;
+    display: inline-block;
+}
+.steps .steps-side .steps-side-stage .sub-stage{
+    width: auto;
+    height: auto;
+    border-left: solid 2px #F28C44;
+    margin: 10px 0;
+    padding: 10px;
+    margin-left: 10px;
+}
+.steps .steps-side .side-of{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    user-select: none;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.steps .steps-side .so-windows{
+    color: #4CB7E5;
+    border: solid 2px #4CB7E5;
+}
+.steps .steps-side .so-linux{
+    color: #59e54c;
+    border: solid 2px #59e54c;
+}
+.steps .steps-side .btn-link-download{
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #59e54c;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 4px;
+    user-select: none;
+    border-radius: 21px;
+}
+
+@media screen and (max-width: 750px){
+    .steps .third-line,
+    .steps .fourth-line,
+    .steps .fifth-line{
+        display: none;
+    }
+    .steps .gp-side{
+        margin-top: 52px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .steps .steps-side{
+        width: 95%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .steps .steps-side .btn-link-download{
+        width: 100%;
+    }
+    .steps .steps-side .side-of{
+        left: 0;
+        margin-left: 0;
+    }
+    .steps .steps-side .steps-side-stage{
+        width: 90%;
+    }
+}

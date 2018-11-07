@@ -1,0 +1,321 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FC814A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 998;
+    transition: all 200ms ease-in;
+}
+#header .header-logo{
+    width: 40px;
+    height: 40px;
+}
+#header .header-group-buttons{
+    width: auto;
+    margin-right: 20px;
+    height: 50px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+#header .header-group-buttons .btn-svg{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 0 2.5px;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#header .header-group-buttons .btn-svg svg{
+    width: 100%;
+    height: 100%;
+}
+#header .header-group-buttons .btn-svg svg > path{
+    fill: #ffffff !important;
+}
+#header .header-group-buttons .btn-download-potigol{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FC814A;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: solid 1px white;
+    margin-right: 15px;
+    border-radius: 0px;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color: white;
+    border-radius: 16px;
+}
+.has-under-header #header .header-group-buttons .btn-download-potigol{
+    color: #000000;
+}
+.colored-header #header .header-group-buttons .btn-download-potigol{
+    color: #FC814A;
+}
+#header .header-group-buttons .btn-download-potigol i{
+    margin-left: 5px;
+}
+#header .header-group-buttons a:hover{
+    transform: scale(1.1,1.1);
+}
+
+#header .btn-menu-open{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+}
+    #header .btn-menu-open:hover .menu-line-burger:nth-child(1){
+        transform: translateY(-2px);
+    }
+    #header .btn-menu-open:hover .menu-line-burger:nth-child(3){
+        transform: translateY(2px);
+    }
+#header .btn-menu-open .menu-line-burger{
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: white;
+    left: 11px;
+    transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+    #header .btn-menu-open .menu-line-burger:nth-child(1){
+        top: 16px;
+    }
+    #header .btn-menu-open .menu-line-burger:nth-child(2){
+        top: 24px;
+    }
+    #header .btn-menu-open .menu-line-burger:nth-child(3){
+        top: 32px;
+    }
+
+/*nav*/
+#header #nav{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 700ms cubic-bezier(0.77, 0, 0.175, 1);
+    overflow-y: auto;
+}
+    .menu-open #header #nav{
+        transform: translateX(0%);
+    }
+#header .header-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #4D4A4A;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 700ms cubic-bezier(0.77, 0, 0.175, 1),
+                visibility 700ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+    .menu-open #header .header-overlay{
+        visibility: visible;
+        opacity: .55;
+    }
+#header #nav .btn-menu-close{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 5px 10px 10px auto;
+    display: block;
+    transition: transform 200ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+#header #nav .btn-menu-close:hover{
+    transform: scale(1.1,1.1);
+}
+    #header #nav .btn-menu-close .menu-line-burger{
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: #030303;
+        left: 11px;
+    }
+        #header #nav .btn-menu-close .menu-line-burger:nth-child(1){
+            transform: rotate(45deg);
+        }
+        #header #nav .btn-menu-close .menu-line-burger:nth-child(2){
+            transform: rotate(-45deg);
+        }
+#header #nav .nav-list-items{
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+}
+#header #nav .nav-list-items .nav-item{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#header #nav .nav-list-items .nav-item a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    line-height: 40px;
+    display: block;
+    transition: transform 400ms ease,
+                opacity 400ms ease;
+    transform: translateX(40px);
+    opacity: 0;
+    position: relative;
+}
+#header #nav .nav-list-items .nav-item a::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: all 200ms ease;
+}
+    #header #nav .nav-list-items .nav-item a:hover::before{
+        width: 30px;
+    }
+    #header #nav .nav-list-items .nav-item .active-list-item::before{
+        width: 30px;
+    }
+    .menu-open #nav .nav-list-items .nav-item a{
+        transform: translateX(0px) !important;
+        opacity: 1 !important;
+    }
+    #header #nav .nav-list-items .nav-list-subitems li{
+        margin-left: 20px;
+    }
+    #header #nav .nav-list-items .nav-list-subitems a{
+        font-size: 13px;
+    }
+/*delay de um por um para o efeito, adicionar 80 a cada novo ítem*/
+.menu-open #header #nav .nav-list-items .nav-item:nth-child(1) a{
+    transition-delay: 350ms;
+}
+    .menu-open #header #nav .nav-list-items .nav-item:nth-child(1) .nav-list-subitems li:nth-child(1) a{
+        transition-delay: 430ms;
+    }
+    .menu-open #header #nav .nav-list-items .nav-item:nth-child(1) .nav-list-subitems li:nth-child(2) a{
+        transition-delay: 510ms;
+    }
+    .menu-open #header #nav .nav-list-items .nav-item:nth-child(1) .nav-list-subitems li:nth-child(3) a{
+        transition-delay: 590ms;
+    }
+.menu-open #header #nav .nav-list-items .nav-item:nth-child(2) a{
+    transition-delay: 430ms;
+}
+.menu-open #header #nav .nav-list-items .nav-item:nth-child(3) a{
+    transition-delay: 510ms;
+}
+
+#header #nav .group-social-icons{
+    width: auto;
+    height: 100px;
+    display: none;
+    margin: auto 0 0 0;
+}
+#header #nav .group-social-icons > div{
+    display: flex;
+    flex-flow: row;
+}
+#header #nav .group-social-icons .btn-download-potigol{
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FC814A;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: solid 1px white;
+    border-radius: 0px;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color: white;
+    border-radius: 21px;
+    margin-bottom: 10px;
+}
+#header #nav .group-social-icons .btn-download-potigol i{
+    margin-left: 5px;
+}
+#header #nav .group-social-icons .group-only-social a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 0 2.5px;
+    transform: translateX(20px);
+    transition: all 200ms ease;
+}
+.menu-open #header #nav .group-social-icons .group-only-social a{
+    transform: translateX(0px);
+}
+    .menu-open #header #nav .group-social-icons .group-only-social a:nth-child(1){
+        transition-delay: 350ms;
+    }
+    .menu-open #header #nav .group-social-icons .group-only-social a:nth-child(2){
+        transition-delay: 430ms;
+    }
+#header #nav .group-social-icons .group-only-social a svg{
+    width: 100%;
+    height: 100%;
+}
+#header #nav .group-social-icons .group-only-social a svg > path{
+    fill: #ffffff !important;
+}
+
+/*responsividade*/
+@media screen and (max-width: 540px){
+    #header #nav{
+        width: 100%;
+        background: #FC814A;
+        background: -webkit-linear-gradient(to right, #FC814A, #bf5533); 
+        background: linear-gradient(to right, #FC814A, #bf5533); 
+
+    }
+    .menu-line-burger,
+    #header #nav .nav-list-items .nav-item a::before{
+        background-color: #ffffff !important;
+    }
+    #header #nav .nav-list-items .nav-item a{
+        color: #ffffff;
+        font-size: 20px;
+    }
+    #header #nav .nav-list-items .nav-list-subitems a{
+        font-size: 16px;
+    }
+    #header #nav .group-social-icons{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    #header .header-group-buttons{
+        margin-right: 10px;
+    }
+    #header .header-group-buttons .btn-svg{
+        display: none;
+    }
+    #header .header-group-buttons .btn-download-potigol{
+        display: none;
+    }
+}
