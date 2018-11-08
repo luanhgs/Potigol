@@ -16,11 +16,11 @@
     height: 50px;
     margin-left: 20px;
 }
-#header .header-logo > a{
+#header .header-logo a{
     display: inline-flex;
     line-height: 50px;
 }
-#header .header-logo > a > img{
+#header .header-logo a > img{
     width: 50px;
     height: 50px;
 }
@@ -307,7 +307,7 @@
 }
 
 /*responsividade*/
-@media screen and (max-width: 540px){
+@media screen and (max-width: 750px){
     #header #nav{
         width: 100%;
         background: #FC814A;
@@ -342,5 +342,19 @@
     }
     #header .header-logo{
         margin-left: 7px;
+    }
+    #header .header-logo{
+        height: 40px;
+        margin-left: 16px;
+    }
+    #header .header-logo a{
+        line-height: 40px;
+    }
+    #header .header-logo a > img{
+        width: 40px;
+        height: 40px;
+    }
+    #header .header-logo > a span{
+        display: none;
     }
 }

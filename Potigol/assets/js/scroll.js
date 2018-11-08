@@ -42,4 +42,17 @@ function smoothScrollTo(endX, endY, duration) {
     }, 1000 / 60); 
 }
 
+/*animar items da página inicial ao descer a página*/
+window.addEventListener("scroll", animateOnScroll);
+animateOnScroll();
+function animateOnScroll(){
+    const boxes = document.querySelectorAll(".before-animate-on-scroll");
+    const pageY = window.pageYOffset + ((window.innerHeight * 3)/4);
+    boxes.forEach(function(el,i){
+        if(pageY > el.offsetTop){
+            el.classList.add("after-animate-on-scroll");
+        }
+    });
+    //console.log(pageY);
+}
 

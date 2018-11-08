@@ -3,9 +3,8 @@
     width: 300px;
     height: calc(100vh - 60px);
     bottom: 0;
-    background-color: #f0f8ff;
-    border-right: solid 1px #c1bcbc;
     overflow: auto;
+    box-shadow: 1px 0px 3px #bbadad;
 }
 .search-side .search-box{
     margin: 10px 0;
