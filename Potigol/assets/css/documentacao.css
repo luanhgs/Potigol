@@ -5,9 +5,7 @@
     bottom: 0;
     background-color: #f0f8ff;
     border-right: solid 1px #c1bcbc;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
+    overflow: auto;
 }
 .search-side .search-box{
     margin: 10px 0;
@@ -38,6 +36,7 @@
 .search-side .list-items-documentation{
     transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
     overflow: hidden;
+    width: 100%;
 }
 .search-side .list-items-documentation .item{
     height: 40px;
@@ -54,6 +53,8 @@
     line-height: 40px;
     color: #000000;
     font-size: 15px;
+    cursor: pointer;
+    margin-left: 15px;
 }
 .search-side .list-items-documentation .item a::before{
     position: absolute;
