@@ -94,121 +94,112 @@
                 </button>
             </div>
             <ul class="list-items-documentation">
-                <li class="item"><a class="item-active" href="variaveis.html">Variáveis</a></li>
+                <li class="item"><a href="variaveis.html">Variáveis</a></li>
                 <li class="item"><a href="http://">Operações Aritméticas</a></li>
                 <li class="item"><a href="http://">Operações Lógicas e Relacionais</a></li>
                 <li class="item"><a href="http://">Entrada</a></li>
                 <li class="item"><a href="http://">Saída</a></li>
-                <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
+                <li class="item"><a class="item-active" href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
             </ul>
             <script src="../assets/js/pesquisa_documentacao.js"></script>
             <script src="../assets/js/menu.js"></script>
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Variáveis</h2>
+            <h2 class="title-documentation">Estruturas Condicionais</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Tipos Básicos</h3>
-                <table class="simple-documentation-table">
-                    <tr class="table-head">
-                        <td>Tipos</td>
-                        <td>Valores</td>
-                    </tr>
-                    <tr>
-                        <td>Inteiro</td>
-                        <td>-4, 0, 5, …</td>
-                    </tr>
-                    <tr>
-                        <td>Real</td>
-                        <td>-7.23, 0.0, 5.25, …</td>
-                    </tr>
-                    <tr>
-                        <td>Texto</td>
-                        <td>"texto", "ola", "mundo", …</td>
-                    </tr>
-                    <tr>
-                        <td>Lógico</td>
-                        <td>Verdadeiro e Falso</td>
-                    </tr>
-                    <tr>
-                        <td>Caractere</td>
-                        <td>'a', '4', '&', …</td>
-                    </tr>
-                </table>
+                <h3 class="title-section-documentation">Se</h3>
+                <div class="demonstration-documentation">
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <pre class="multi-line-code-field-demonstration">
+x <span class="signal">=</span> <span class="method">leia_inteiro</span>
+
+<span class="comment"># se ... então ... fim</span>
+<span class="signal">se</span> x <span class="signal">></span> <span class="variable-type">5</span> <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que cinco."</span> 
+<span class="signal">fim</span>
+
+<span class="comment"># se ... então ... senão ... fim</span>
+<span class="signal">se</span> x <span class="signal">></span> <span class="variable-type">5</span> <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que cinco."</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"Menor ou igual a cinco."</span>
+<span class="signal">fim</span>
+
+<span class="signal">se</span> <span class="variable-type">verdadeiro</span> <span class="signal">então</span>               <span class="comment"># escreva "verdadeiro"</span>
+    <span class="signal">escreva</span> <span class="caractere">"verdadeiro"</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"falso"</span>
+<span class="signal">fim</span>
+
+<span class="signal">se</span> <span class="variable-type">falso</span> <span class="signal">então</span>                    <span class="comment"># escreva "falso"</span>
+    <span class="signal">escreva</span> <span class="caractere">"verdadeiro"</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"falso"</span>
+<span class="signal">fim</span>
+
+<span class="comment"># se ... então ... senãose ... senão ... fim</span>
+<span class="signal">se</span> x <span class="signal">></span> 8 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que oito."</span>
+<span class="signal">senãose</span> x <span class="signal">></span> 6 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que seis."</span>
+<span class="signal">senãose</span> x <span class="signal">></span> 4 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que quatro."</span>
+<span class="signal">senãose</span> x <span class="signal">></span> 2 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que dois."</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"Menor ou igual a dois."</span>
+<span class="signal">fim</span>
+
+<span class="comment"># usando se como uma expressão</span>
+a <span class="signal">= se</span> x <span class="signal">mod</span> <span class="variable-type">2</span> <spab class="signal">==</spab> <span class="variable-type">0</span> <span class="signal">então</span> <span class="caractere">"par"</span> <span class="signal">senão</span> <span class="caractere">"ímpar"</span> <span class="signal">fim</span>
+
+maior <span class="signal">= se</span> a <span class="signal">>=</span> b <span class="signal">e</span> a <span class="signal">>=</span> c <span class="signal">então</span> a <span class="signal">senãose</span> b <span class="signal">></span> c <span class="signal">então</span> b <span class="signal">senão</span> c <span class="signal">fim</span>
+                        </pre>
+                    </div>
+                </div>
             </section>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Declaração de Variáveis</h3>
+                <h3 class="title-section-documentation">Escolha</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração de um valor fixo (não pode ser alterado)</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
                             <button><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        x <span class="signal">=</span> <span class="variable-type">10</span>
-                    </div>
-                </div>
+                        <pre class="multi-line-code-field-demonstration">
+x = <span class="method">leia_inteiro</span>
+<span class="signal">escolha</span> x
+    <span class="signal">caso</span> <span class="variable-type">1</span> <span class="signal">=> escreva</span> <span class="caractere">"Um"</span>                       <span class="comment"># se x == 1</span>
+    <span class="signal">caso</span> <span class="variable-type">2</span> <span class="signal">=> escreva</span> <span class="caractere">"Dois"</span>                     <span class="comment"># se x <> 1 e x == 2</span>
+    <span class="signal">caso</span> <span class="variable-type">3</span> <span class="signal">=> escreva</span> <span class="caractere">"Três"</span>                     <span class="comment"># se x <> 1 e x <> 2 e x == 3</span>
+    <span class="signal">caso</span> <span class="signal">_ => escreva</span> <span class="caractere">"Outro Valor"</span>        <span class="comment"># se x <> 1 e x <> 2 e x <> 3</span>
+<span class="signal">fim</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Mais de uma variável recebe o mesmo valor y = 20 e z = 20</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        y<span class="signal">,</span>z <span class="signal">=</span> <span class="variable-type">20</span>
-                    </div>
-                </div>
+<span class="comment"># escolha com condições</span>
+<span class="signal">escolha</span> x
+    <span class="signal">caso</span> n <span class="signal">se</span> n <span class="signal"><</span> <span class="variable-type">0</span>               <span class="signal">=> escreva</span> <span class="caractere">"{<span class="w">n</span>} é negativo"</span>
+    <span class="signal">caso</span> n <span class="signal">se</span> n <span class="signal">mod</span> <span class="variable-type">2</span> <span class="signal">==</span> <span class="variable-type">0</span> <span class="signal">=> escreva</span> <span class="caractere">"{<span class="w">n</span>} é par"</span>
+    <span class="signal">caso</span> n                              <span class="signal">=> escreva</span> <span class="caractere">"{<span class="w">n</span>} é ímpar"</span>
+<span class="signal">fim</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração paralela: a = 1, b = 2 e c = 3</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        a<span class="signal">,</span> b<span class="signal">,</span> c = <span class="variable-type">1</span><span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
-                    </div>
-                </div>
+<span class="comment"># usando escolha como uma expressão</span>
+é_zero <span class="signal">= escolha</span> x
+    <span class="sigal">caso</span> <span class="variable-type">0</span> <span class="signal">=></span> <span class="variable-type">verdadeiro</span>
+    caso <span class="signal">_ =></span> <span class="variable-type">falso</span>
+<span class="signal">fim</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração de uma variável alterável</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span class="signal">var</span> y <span class="signal">:=</span> <span class="variable-type">10</span>
+sinal <span class="signal">= escolha</span> x               <span class="comment"># escolha retorna um número: -1, 0 ou 1</span>
+    <span class="signal">caso</span> n <span class="signal">se</span> n < 0 => <span class="variable-type">-1</span>
+    <span class="signal">caso</span> n <span class="signal">se</span> n > 0 =>  <span class="variable-type">1</span>
+    <span class="signal">caso</span> <span class="signal">_                =></span>  <span class="variable-type">0</span>
+<span class="signal">fim</span>
+                        </pre>
                     </div>
                 </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Atribuição de um valor a uma variável</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        y <span class="signal">:=</span> y <span class="signal">+</span> <span class="variable-type">2</span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração paralela: var a := 1, var b := 2 e var c := 3</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span class="signal">var</span> a<span class="signal">,</span> b<span class="signal">,</span> c <span class="ginal">:= </span><span class="variable-type">1</span> <span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Atribuição paralela: a := 2, b := 1 e c := 4</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        a<span class="signal">,</span> b<span class="signal">,</span> c <span class="signal">:=</span> b<span class="signal">,</span> a<span class="signal">,</span> <span class="variable-type">4</span>
-                    </div>
-                </div>
-                
             </section>
-        </section>
+    </section>
     </main>
     <footer id="footer">
         

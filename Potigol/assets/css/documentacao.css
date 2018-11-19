@@ -73,11 +73,116 @@
 }
 .content-documentation{
     width: calc(100% - 300px);
-    height: 1000px;
     margin-right: 0;
     margin-left: auto;
 }
 
+.content-documentation .title-documentation{
+    font-size: 27px;
+    font-weight: 300;
+    padding: 33px 59px;
+}
+.content-documentation .section-documentation{
+    height: auto;
+    padding: 20px 59px;
+    max-width: 800px;
+}
+.content-documentation .section-documentation .title-section-documentation{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.content-documentation .section-documentation .simple-documentation-table{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-collapse: collapse;
+}
+.content-documentation .section-documentation .simple-documentation-table tr{
+    height: 40px; 
+}
+.content-documentation .section-documentation .simple-documentation-table .table-head td{
+    font-weight: 600;
+}
+.content-documentation .section-documentation .simple-documentation-table tr td{
+    padding: 15px;
+    text-align: left;
+    border: solid 1px #e0dada;
+}
+.content-documentation .section-documentation .demonstration-documentation{
+    width: 100%;
+    height: auto;
+    background-color: #272822;
+    border-radius: 12px;
+}
+.content-documentation .section-documentation .demonstration-documentation:not(:first-of-type){
+    margin-top: 20px;
+}
+.content-documentation .section-documentation .demonstration-documentation .title-demonstration-documentation{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: white;
+}
+.content-documentation .section-documentation .demonstration-documentation .multi-line-code-field-demonstration{
+    width: 100%;
+    text-align: left;
+}
+.content-documentation .section-documentation .demonstration-documentation .multi-line-code-field-demonstration,
+.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration{
+    overflow: auto;
+}
+.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration{
+    height: auto;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+}
+    /*sinais, caracteres, etc*/
+    .content-documentation .section-documentation .demonstration-documentation .signal{
+        color: #f92672;
+    }
+    .content-documentation .section-documentation .demonstration-documentation .caractere{
+        color: #e6db74;
+    }
+    .content-documentation .section-documentation .demonstration-documentation .variable-type{
+        color: #8671d7;
+    }
+    .content-documentation .section-documentation .demonstration-documentation .method{
+        color: #5ab6ac;
+    }
+    .content-documentation .section-documentation .demonstration-documentation .comment{
+        color: #606e59 ;
+    }
+    .content-documentation .section-documentation .demonstration-documentation .w{
+        color: #ffffff ;
+    }
+     
+.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy{
+    width: 100%;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy button{
+    width: 80px;
+    height: 25px;
+    color: white;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy button:hover{
+    background-color: #FC814A;
+    border-radius: 10px;
+}
+.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy button i{
+    margin-right: 5px;
+}
 
 /*responsividade*/
 @media screen and (max-width: 750px){
@@ -102,5 +207,11 @@
     }
     .doc-items-closed .search-side .list-items-documentation{
         height: 0 !important;
+    }
+    .content-documentation .title-documentation{
+        padding: 33px 20px;
+    }
+    .content-documentation .section-documentation{
+        padding: 20px 20px;
     }
 }
