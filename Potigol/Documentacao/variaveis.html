@@ -141,9 +141,11 @@
                     <div class="title-demonstration-documentation">Declaração de um valor fixo (não pode ser alterado)</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-code-field data-dica-codigo="VARIAVEIS_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        x <span class="signal">=</span> <span class="variable-type">10</span>
+                        <span>
+                            x <span class="signal">=</span> <span class="variable-type">10</span>
+                        </span>
                     </div>
                 </div>
 
@@ -151,7 +153,7 @@
                     <div class="title-demonstration-documentation">Mais de uma variável recebe o mesmo valor y = 20 e z = 20</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-dica-codigo="VARIAVEIS_2"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         y<span class="signal">,</span>z <span class="signal">=</span> <span class="variable-type">20</span>
                     </div>
@@ -161,7 +163,7 @@
                     <div class="title-demonstration-documentation">Declaração paralela: a = 1, b = 2 e c = 3</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-dica-codigo="VARIAVEIS_3"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         a<span class="signal">,</span> b<span class="signal">,</span> c = <span class="variable-type">1</span><span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
                     </div>
@@ -171,7 +173,7 @@
                     <div class="title-demonstration-documentation">Declaração de uma variável alterável</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-dica-codigo="VARIAVEIS_4"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <span class="signal">var</span> y <span class="signal">:=</span> <span class="variable-type">10</span>
                     </div>
@@ -181,7 +183,7 @@
                     <div class="title-demonstration-documentation">Atribuição de um valor a uma variável</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-dica-codigo="VARIAVEIS_5"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         y <span class="signal">:=</span> y <span class="signal">+</span> <span class="variable-type">2</span>
                     </div>
@@ -191,7 +193,7 @@
                     <div class="title-demonstration-documentation">Declaração paralela: var a := 1, var b := 2 e var c := 3</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-dica-codigo="VARIAVEIS_6"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <span class="signal">var</span> a<span class="signal">,</span> b<span class="signal">,</span> c <span class="ginal">:= </span><span class="variable-type">1</span> <span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
                     </div>
@@ -201,7 +203,7 @@
                     <div class="title-demonstration-documentation">Atribuição paralela: a := 2, b := 1 e c := 4</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button><i class="fas fa-clone"></i>copiar</button>
+                            <button data-dica-codigo="VARIAVEIS_7"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         a<span class="signal">,</span> b<span class="signal">,</span> c <span class="signal">:=</span> b<span class="signal">,</span> a<span class="signal">,</span> <span class="variable-type">4</span>
                     </div>
@@ -214,5 +216,6 @@
         
     </footer>
     <script src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/dicas.js"></script>
 </body>
 </html>

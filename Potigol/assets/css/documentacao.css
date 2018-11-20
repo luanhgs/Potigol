@@ -112,7 +112,6 @@
 .content-documentation .section-documentation .demonstration-documentation{
     width: 100%;
     height: auto;
-    background-color: #272822;
     border-radius: 12px;
 }
 .content-documentation .section-documentation .demonstration-documentation:not(:first-of-type){
@@ -122,7 +121,6 @@
     width: 100%;
     height: auto;
     padding: 10px 0;
-    background-color: white;
 }
 .content-documentation .section-documentation .demonstration-documentation .multi-line-code-field-demonstration{
     width: 100%;
@@ -131,7 +129,38 @@
 .content-documentation .section-documentation .demonstration-documentation .multi-line-code-field-demonstration,
 .content-documentation .section-documentation .demonstration-documentation .code-field-demonstration{
     overflow: auto;
+    background-color: #272822;
+    border-radius: 12px;
+    position: relative;
 }
+.copied-code .multi-line-code-field-demonstration,
+.copied-code .code-field-demonstration{
+    overflow: hidden !important;
+}
+    .copied-code .code-field-demonstration::before{
+        position: absolute;
+        top: 0;
+        right: 34px;
+        content: '';
+        width: 50px;
+        height: 50px;
+        background-color: #fc814a;
+        color: white;
+        z-index: 2;
+        border-radius: 100%;
+
+        animation: animation-copied 500ms ease;
+    }
+    @keyframes animation-copied{
+        0%{
+            transform: scale(0);
+            opacity: 1;
+        }
+        100%{
+            transform: scale(5);
+            opacity: 0;
+        }
+    }
 .content-documentation .section-documentation .demonstration-documentation .code-field-demonstration{
     height: auto;
     padding: 10px 20px;
@@ -175,10 +204,8 @@
     font-size: 11px;
     cursor: pointer;
     transition: all 250ms ease;
-}
-.content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy button:hover{
-    background-color: #FC814A;
-    border-radius: 10px;
+    position: relative;
+    z-index: 3;
 }
 .content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy button i{
     margin-right: 5px;
