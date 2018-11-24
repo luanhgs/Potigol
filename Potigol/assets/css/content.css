@@ -98,11 +98,11 @@
 }
 .steps .steps-side{
     width: 50%;
-    height: fit-content;
+    /*height: fit-content;*/
     position: relative;
     margin: 0 10px;
     box-shadow: 2px 3px 8px #c3b7b7;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: all 200ms ease;
 }
 .steps .steps-side:hover{
@@ -163,7 +163,7 @@
     display: block;
     width: 100%;
     height: 50px;
-    background-color: #59e54c;
+    background-color: #47ce45;
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
