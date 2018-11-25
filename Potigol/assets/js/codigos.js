@@ -1,37 +1,37 @@
-var dicas = [
+var codigos = [
     //variáveis
     {
-        codigo: "VARIAVEIS_1",
-        dica: "x = 10"
+        id: "VARIAVEIS_1",
+        codigo: "x = 10"
     },
     {
-        codigo: "VARIAVEIS_2",
-        dica: "y,z = 20"
+        id: "VARIAVEIS_2",
+        codigo: "y,z = 20"
     },
     {
-        codigo: "VARIAVEIS_3",
-        dica: "a, b, c = 1, 2, 3"
+        id: "VARIAVEIS_3",
+        codigo: "a, b, c = 1, 2, 3"
     },
     {
-        codigo: "VARIAVEIS_4",
-        dica: "var y := 10"
+        id: "VARIAVEIS_4",
+        codigo: "var y := 10"
     },
     {
-        codigo: "VARIAVEIS_5",
-        dica: "y := y + 2"
+        id: "VARIAVEIS_5",
+        codigo: "y := y + 2"
     },
     {
-        codigo: "VARIAVEIS_6",
-        dica: "var a, b, c := 1 , 2, 3"
+        id: "VARIAVEIS_6",
+        codigo: "var a, b, c := 1 , 2, 3"
     },
     {
-        codigo: "VARIAVEIS_7",
-        dica: "a, b, c := b, a, 4"
+        id: "VARIAVEIS_7",
+        codigo: "a, b, c := b, a, 4"
     },
     //estruturas condicionais
     {
-        codigo: "ESTR_CONDICIONAIS_1",
-        dica: 
+        id: "ESTR_CONDICIONAIS_1",
+        codigo: 
         " x = leia_inteiro\n \
 # se ... então ... fim\n \
 se x > 5 então\n \
@@ -76,8 +76,8 @@ a = se x mod 2 == 0 então \"par\" senão \"ímpar\" fim\n \
 maior = se a >= b e a >= c então a senãose b > c então b senão c fim"
     },
     {
-        codigo: "ESTR_CONDICIONAIS_2",
-        dica: 
+        id: "ESTR_CONDICIONAIS_2",
+        codigo: 
         " x = leia_inteiro\n \
 escolha x\n \
     caso 1 => escreva \"Um\"                       # se x == 1\n \
@@ -110,19 +110,19 @@ fim"
 ////
 ////
 ////
-//copiar dica
-const buttons = document.querySelectorAll('button[data-dica-codigo]');
+//copiar codigo
+const buttons = document.querySelectorAll('button[data-codigo-id]');
 buttons.forEach(function(btn){
     btn.addEventListener("click", function(){
-        const dica = getDica(this.getAttribute("data-dica-codigo"));
-        copyToClipboard(dica);
+        const codigo = getcodigo(this.getAttribute("data-codigo-id"));
+        copyToClipboard(codigo);
     });  
 });
 
-function getDica(codigo){
-    for(var i = 0; i <= dicas.length; i++){
-        if(dicas[i].codigo === codigo)
-            return dicas[i].dica;
+function getcodigo(id){
+    for(var i = 0; i <= codigos.length; i++){
+        if(codigos[i].id === id)
+            return codigos[i].codigo;
     }
 }
 
