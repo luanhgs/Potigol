@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg5174"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="brasil_linaguagem.svg">
+  <defs
+     id="defs5168" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="55.898276"
+     inkscape:cy="46.109026"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5171">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54167)">
+    <path
+       style="fill:none;stroke:#fc814a;stroke-width:0.66500002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3.1862169,280.4424 1.0090605,1.7478 2.4185972,0.62048 0.934815,-0.87252 0.436248,1.1218 2.1812364,0.81021 0.311607,0.93485 1.371063,0.74787 -0.49857,0.56091 0.249285,1.49576 1.246421,2.1813 -1.308741,1.68273 2.181237,2.1813 1.433384,-1.68273 0.810172,-2.61756 2.056595,-0.74787 0.810174,0.0623 1.495706,-1.74504 0.623211,-2.80453 1.121778,-1.30878 1.059459,-0.49859 0.186963,-2.24363 -1.744989,-0.87254 -0.872496,-0.99717 -1.869632,-0.56089 -1.744989,-0.81021 h -1.371063 l 0.685531,-0.99717 -1.495704,-1.49574 -0.997137,1.05948 -1.246422,-0.62322 -1.495706,0.74787 -0.373926,-1.74504 -2.8044474,0.43626 0.68553,1.62039 -0.747852,0.37395 -1.121778,-1.0595 -1.495706,0.62324 0.124647,2.80454 H 4.4949637 Z"
+       id="path5741"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

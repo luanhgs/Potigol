@@ -245,6 +245,9 @@
     .menu-open #header #nav .nav-list-items .nav-item:nth-child(1) .nav-list-subitems li:nth-child(3) a{
         transition-delay: 590ms;
     }
+    .menu-open #header #nav .nav-list-items .nav-item:nth-child(1) .nav-list-subitems li:nth-child(4) a{
+        transition-delay: 670ms;
+    }
 .menu-open #header #nav .nav-list-items .nav-item:nth-child(2) a{
     transition-delay: 430ms;
 }

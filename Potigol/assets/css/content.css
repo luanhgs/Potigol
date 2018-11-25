@@ -71,8 +71,22 @@
 .group-caracteristicas .caracteristica-box{
     width: 250px;
     height: 250px;
-    background-color: aqua;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.group-caracteristicas .caracteristica-box img{
+    width: 100px;
+}
+.group-caracteristicas .caracteristica-box span{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 5px;
+    color: #FC814A;
+    font-weight: 500;
 }
 .steps .download-btn{
     margin-top: 52px;
