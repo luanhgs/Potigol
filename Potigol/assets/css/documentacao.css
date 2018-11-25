@@ -68,7 +68,8 @@
 .search-side .list-items-documentation .item .item-active::before{
     width: 30px;
 }
-.search-side .list-items-documentation .item a:hover::before{
+.search-side .list-items-documentation .item a:hover::before,
+.search-side .list-items-documentation .item a:focus::before{
     width: 30px;
 }
 .content-documentation{

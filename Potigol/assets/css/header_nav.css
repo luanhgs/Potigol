@@ -78,7 +78,8 @@
 #header .header-group-buttons .btn-download-potigol i{
     margin-left: 5px;
 }
-#header .header-group-buttons a:hover{
+#header .header-group-buttons a:hover,
+#header .header-group-buttons a:focus{
     transform: scale(1.1,1.1);
 }
 
@@ -91,10 +92,12 @@
     cursor: pointer;
     margin-left: 10px;
 }
-    #header .btn-menu-open:hover .menu-line-burger:nth-child(1){
+    #header .btn-menu-open:hover .menu-line-burger:nth-child(1),
+    #header .btn-menu-open:focus .menu-line-burger:nth-child(1){
         transform: translateY(-2px);
     }
-    #header .btn-menu-open:hover .menu-line-burger:nth-child(3){
+    #header .btn-menu-open:hover .menu-line-burger:nth-child(3),
+    #header .btn-menu-open:focus .menu-line-burger:nth-child(3){
         transform: translateY(2px);
     }
 #header .btn-menu-open .menu-line-burger{
@@ -163,7 +166,8 @@
     display: block;
     transition: transform 200ms cubic-bezier(0.77, 0, 0.175, 1);
 }
-#header #nav .btn-menu-close:hover{
+#header #nav .btn-menu-close:hover,
+#header #nav .btn-menu-close:focus{
     transform: scale(1.1,1.1);
 }
     #header #nav .btn-menu-close .menu-line-burger{
@@ -211,7 +215,8 @@
     left: 0;
     transition: all 200ms ease;
 }
-    #header #nav .nav-list-items .nav-item a:hover::before{
+    #header #nav .nav-list-items .nav-item a:hover::before,
+    #header #nav .nav-list-items .nav-item a:focus::before{
         width: 30px;
     }
     #header #nav .nav-list-items .nav-item .active-list-item::before{

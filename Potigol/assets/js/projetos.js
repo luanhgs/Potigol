@@ -9,7 +9,8 @@ var projetos = [
     {
         codigo: "PROJ-PACIENCIA",
         nome: "Paciência",
-        descricao: "Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro",
+        //descricao: "Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro",
+        descricao: "Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro Paciência é um jogo de cartas para um só jogador. É um jogo muito famoso sobretudo por causa de uma versão para o sistema operacional Microsoft Windows, que é considerada um dos jogos para computador mais populares de todos os tempos e o videojogo mais jogado no mundo inteiro",
         imgUrl: "../assets/img/ex_paciencia.jpeg"
     }
 ];
@@ -22,6 +23,12 @@ document.querySelector("#view-projeto").addEventListener("click", function(){
     if(!document.querySelector("#view-projeto .projeto").contains(event.target))
         document.body.classList.remove("projeto-open");
 });
+window.addEventListener("keyup", function(){
+    const key = event.which || event.keyCode;
+    if(document.body.classList.contains("projeto-open") && key == 27)
+        document.body.classList.remove("projeto-open");
+    
+});
 
 const btns_sproj = document.querySelectorAll(".projetos .box-projeto[data-codigo-projeto]");
 
@@ -30,8 +37,7 @@ btns_sproj.forEach(function(el){
         const codigo_proj = this.getAttribute("data-codigo-projeto");
         const projeto = getProjeto(codigo_proj);
         
-        //adicionar informações 
-
+        //---adicionar informações ---
         //nome
         document.querySelector("#view-projeto .projeto .img-title-projeto .title").innerHTML = projeto.nome;
         //imagem

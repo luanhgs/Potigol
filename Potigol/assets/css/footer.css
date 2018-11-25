@@ -1,9 +1,61 @@
 #footer{
     margin-top: 20px;
     width: 100%;
+    height: 400px;
+    background: #81cbe6;
+}
+#footer .f-cont{
     height: 200px;
-    background: #c31432;
-    background: -webkit-linear-gradient(to top, #112F41, #068587);
-    background: linear-gradient(to top, #112F41, #068587); 
-
+    background: #81cbe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .f-cont h1{
+    font-weight: 100;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#footer .an{
+    width: 100%;
+    height: 260px;
+    background-color: #81cbe6;
+    position: relative;
+}
+#footer .an .sea-an{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/icons/svg/mar.svg");
+    background-size: auto 200px;
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+}
+#footer .an .nuv-an{
+    width: 100%;
+    height: 60px;
+    background-image: url("../img/icons/svg/nuvens.svg");
+    background-size: auto 60px;
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+}
+#footer .an .poti{
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/icons/png/potigol_icone.png");
+    background-size: 100%;
+    position: absolute;
+    left: 75px;
+    animation: poti-animation 1000ms infinite;
+}
+@keyframes poti-animation{
+    0%{
+        bottom: 5px;
+    }
+    50%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 5px;
+    }
 }

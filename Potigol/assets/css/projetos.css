@@ -24,7 +24,8 @@
     cursor: pointer;
     transition: all 600ms ease;
 }
-.projetos .box-projeto:hover{
+.projetos .box-projeto:hover,
+.projetos .box-projeto:focus{
     transform: scale(1.03, 1.03);
 }
 .projetos .box-projeto::before{
@@ -51,7 +52,8 @@
     z-index: 4;
     transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.projetos .box-projeto:hover::after{
+.projetos .box-projeto:hover::after,
+.projetos .box-projeto:focus::after{
     opacity: .2;
 }
 .projetos .box-projeto .info-ico{
@@ -67,7 +69,8 @@
     opacity: 0;
     transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.projetos .box-projeto:hover .info-ico{
+.projetos .box-projeto:hover .info-ico,
+.projetos .box-projeto:focus .info-ico{
     opacity: 1;
 }
 .projetos .box-projeto .info-ico > .ico{
@@ -81,7 +84,8 @@
     transition: all 200ms ease;
     transform: scale(0,0);
 }
-.projetos .box-projeto:hover .info-ico > .ico{
+.projetos .box-projeto:hover .info-ico > .ico,
+.projetos .box-projeto:focus .info-ico > .ico{
     transform: scale(1,1);
 }
 .projetos .box-projeto .name-proj{
@@ -109,18 +113,15 @@
 }
 
 .projeto-open #view-projeto{
-    visibility: visible;
-    transform: scale(1);
+    display: flex;
 }
 #view-projeto{
-    visibility: hidden;
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
     justify-content: center;
     z-index: 2;
-    transform: scale(0.9);
 }
 #view-projeto::before{
     width: 100%;
@@ -141,6 +142,8 @@
     position: absolute;
     z-index: 2;
     background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
 }
 #view-projeto .projeto .btn-close-projeto{
     position: absolute;
@@ -154,7 +157,8 @@
     transition: transform 200ms cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 3;
 }
-#view-projeto .projeto .btn-close-projeto:hover{
+#view-projeto .projeto .btn-close-projeto:hover,
+#view-projeto .projeto .btn-close-projeto:focus{
     transform: scale(1.1,1.1);
 }
 #view-projeto .projeto .btn-close-projeto .line-btn{
@@ -177,6 +181,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 #view-projeto .projeto .img-title-projeto .title{
     position: absolute;
@@ -191,7 +196,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #3c3939;
+    background: #614385;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc814a, #053035);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc814a, #053035); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     opacity: .8;
     content: '';
     z-index: 2;
@@ -201,11 +209,55 @@
     position: absolute;
 }
 #view-projeto .projeto .desc{
-    padding: 20px;
-    max-height: 210px;
-    overflow: hidden;
+    padding: 30px 30px 0;
+    height: 160px;
 }
-
+#view-projeto .projeto .desc span{
+    max-height: 160px;
+    overflow: auto;
+    display: block;
+}
+@media screen and (min-width: 750px){
+    #view-projeto .projeto .desc span::-webkit-scrollbar {
+        width: 10px;
+    }
+    #view-projeto .projeto .desc span::-webkit-scrollbar-track {
+        background: #dedad8; 
+    }
+    #view-projeto .projeto .desc span::-webkit-scrollbar-thumb {
+        background: #7cc6c7;
+    }
+    #view-projeto .projeto .desc span::-webkit-scrollbar-thumb:hover {
+        background: #5aa9aa;
+    }
+}
+#view-projeto .projeto .opt{
+    padding: 0 30px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+}
+#view-projeto .projeto .opt .btn-opt{
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transition: all 200ms ease;
+}
+#view-projeto .projeto .opt .btn-github{
+    border-color: #068587;
+    background-color: #068587;
+    color: white;
+}
+#view-projeto .projeto .opt .btn-github:hover,
+#view-projeto .projeto .opt .btn-github:focus{
+    border-color: #056466;
+    background-color: #056466;
+}
 @media screen and (max-width: 750px){
     #view-projeto{
         justify-content: inherit;
