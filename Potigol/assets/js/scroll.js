@@ -56,3 +56,9 @@ function animateOnScroll(){
     //console.log(pageY);
 }
 
+//scroll top
+const btnTop = document.querySelector("#footer .footer-content .button-back-top #backTop");
+btnTop.addEventListener("click", function(){
+    smoothScrollTo(0,0,700);
+});
+
