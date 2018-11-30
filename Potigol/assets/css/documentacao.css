@@ -169,23 +169,27 @@
     font-size: 20px;
 }
     /*sinais, caracteres, etc*/
-    .content-documentation .section-documentation .demonstration-documentation .signal{
+    .content-documentation .section-documentation .signal{
         color: #f92672;
     }
-    .content-documentation .section-documentation .demonstration-documentation .caractere{
+    .content-documentation .section-documentation .caractere{
         color: #e6db74;
     }
-    .content-documentation .section-documentation .demonstration-documentation .variable-type{
+    .content-documentation .section-documentation .variable-type{
         color: #8671d7;
     }
-    .content-documentation .section-documentation .demonstration-documentation .method{
+    .content-documentation .section-documentation .method{
         color: #5ab6ac;
     }
-    .content-documentation .section-documentation .demonstration-documentation .comment{
+    .content-documentation .section-documentation .comment{
         color: #606e59 ;
     }
-    .content-documentation .section-documentation .demonstration-documentation .w{
+    .content-documentation .section-documentation .w{
         color: #ffffff ;
+    }
+    .content-documentation .section-documentation .line-down{
+        display: block;
+        padding-top: 15px;
     }
      
 .content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy{
@@ -194,6 +198,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 10px;
 }
 .content-documentation .section-documentation .demonstration-documentation .code-field-demonstration .top-copy button{
     width: 80px;

@@ -28,6 +28,102 @@ var codigos = [
         id: "VARIAVEIS_7",
         codigo: "a, b, c := b, a, 4"
     },
+    //operações
+    {
+        id: "OPERA_1",
+        codigo: "5 + 3"
+    },
+    {
+        id: "OPERA_2",
+        codigo: "5 - 3"
+    },
+    {
+        id: "OPERA_3",
+        codigo: "5 * 3"
+    },
+    {
+        id: "OPERA_4",
+        codigo: "5 / 3"
+    },
+    {
+        id: "OPERA_5",
+        codigo: "5 div 3"
+    },
+    {
+        id: "OPERA_6",
+        codigo: "5 mod 3"
+    },
+    {
+        id: "OPERA_7",
+        codigo: "verdadeiro e falso"
+    },
+    {
+        id: "OPERA_8",
+        codigo: "verdadeiro ou falso"
+    },
+    {
+        id: "OPERA_9",
+        codigo: "não verdadeiro"
+    },
+    {
+        id: "OPERA_10",
+        codigo: "2 == 3"
+    },
+    {
+        id: "OPERA_11",
+        codigo: "2 <> 3"
+    },
+    {
+        id: "OPERA_12",
+        codigo: "2 < 3"
+    },
+    {
+        id: "OPERA_13",
+        codigo: "2 <= 3"
+    },
+    {
+        id: "OPERA_14",
+        codigo: "2 > 3"
+    },
+    {
+        id: "OPERA_15",
+        codigo: "2 >= 3"
+    },
+    //Entrada e Saída
+    {
+        id: "ENTR_SA_1",
+        codigo: "a = leia_inteiro"
+    },
+    {
+        id: "ENTR_SA_2",
+        codigo: "b = leia_real"
+    },
+    {
+        id: "ENTR_SA_3",
+        codigo: "c = leia_texto"
+    },
+    {
+        id: "ENTR_SA_4",
+        codigo: "números = leia_inteiros (5)"
+    },
+    {
+        id: "ENTR_SA_5",
+        codigo: "números = leia_inteiros (\",\")"
+    },
+    {
+        id: "ENTR_SA_6",
+        codigo: "escreva \"Olá Mundo !\""
+    },
+    {
+        id: "ENTR_SA_7",
+        codigo: "imprima \"Olá !\""
+    },
+    {
+        id: "ENTR_SA_8",
+        codigo: 
+        "nome = \"mundo\"\n \
+        escreva \"Olá {nome}\""
+    },
     //estruturas condicionais
     {
         id: "ESTR_CONDICIONAIS_1",

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
     <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Variáveis</title>
+    <title>Potigol | Operações</title>
     <link rel="stylesheet" href="../assets/css/header_nav.css">
     <link rel="stylesheet" href="../assets/css/padroes.css">
     <link rel="stylesheet" href="../assets/css/content.css">
@@ -96,119 +96,121 @@
                 </button>
             </div>
             <ul class="list-items-documentation">
-                <li class="item"><a class="item-active" href="variaveis.html">Variáveis</a></li>
+                <li class="item"><a href="variaveis.html">Variáveis</a></li>
                 <li class="item"><a href="operacoes.html">Operações</a></li>
-                <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
+                <li class="item"><a class="item-active" href="entrada_e_saida.html">Entrada e Saída</a></li>
                 <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
             </ul>
             <script src="../assets/js/pesquisa_documentacao.js"></script>
             <script src="../assets/js/menu.js"></script>
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Variáveis</h2>
+            <h2 class="title-documentation">Operações</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Tipos Básicos</h3>
-                <table class="simple-documentation-table">
-                    <tr class="table-head">
-                        <td>Tipos</td>
-                        <td>Valores</td>
-                    </tr>
-                    <tr>
-                        <td>Inteiro</td>
-                        <td>-4, 0, 5, …</td>
-                    </tr>
-                    <tr>
-                        <td>Real</td>
-                        <td>-7.23, 0.0, 5.25, …</td>
-                    </tr>
-                    <tr>
-                        <td>Texto</td>
-                        <td>"texto", "ola", "mundo", …</td>
-                    </tr>
-                    <tr>
-                        <td>Lógico</td>
-                        <td>Verdadeiro e Falso</td>
-                    </tr>
-                    <tr>
-                        <td>Caractere</td>
-                        <td>'a', '4', '&', …</td>
-                    </tr>
-                </table>
-            </section>
-            <section class="section-documentation">
-                <h3 class="title-section-documentation">Declaração de Variáveis</h3>
+                <h3 class="title-section-documentation">Entrada</h3>
+
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração de um valor fixo (não pode ser alterado)</div>
+                    <div class="title-demonstration-documentation">Lê um número inteiro do teclado</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <span>
-                            x <span class="signal">=</span> <span class="variable-type">10</span>
+                            a <span class="signal">=</span> <span class="method">leia_inteiro</span>
                         </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Mais de uma variável recebe o mesmo valor y = 20 e z = 20</div>
+                    <div class="title-demonstration-documentation">Lê um número real do teclado</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_2"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_2"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        y<span class="signal">,</span>z <span class="signal">=</span> <span class="variable-type">20</span>
+                        <span>
+                            b <span class="signal">=</span> <span class="method">leia_real</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração paralela: a = 1, b = 2 e c = 3</div>
+                    <div class="title-demonstration-documentation">Lê um texto do teclado</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_3"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_3"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        a<span class="signal">,</span> b<span class="signal">,</span> c = <span class="variable-type">1</span><span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
+                        <span>
+                            c <span class="signal">=</span> <span class="method">leia_texto</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração de uma variável alterável</div>
+                    <div class="title-demonstration-documentation">Lê um lista de 5 números inteiros, um por linha</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_4"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_4"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span class="signal">var</span> y <span class="signal">:=</span> <span class="variable-type">10</span>
+                        <span>
+                            números <span class="signal">=</span> <span class="method">leia_inteiros</span> <span class="signal">(</span><span class="variable-type">5</span><span class="signal">)</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Atribuição de um valor a uma variável</div>
+                    <div class="title-demonstration-documentation">Lê uma lista de números inteiros separados por vírgula</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_5"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_5"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        y <span class="signal">:=</span> y <span class="signal">+</span> <span class="variable-type">2</span>
+                        <span>
+                            números <span class="signal">=</span> <span class="method">leia_inteiros</span> <span class="signal">(</span><span class="caractere">","</span><span class="signal">)</span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Saída</h3>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Escreve e passa para a próxima linha</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="ENTR_SA_6"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="signal">escreva</span> <span class="caractere">"Olá Mundo !"</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração paralela: var a := 1, var b := 2 e var c := 3</div>
+                    <div class="title-demonstration-documentation">Escreve e continua na mesma linha</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_6"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_7"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span class="signal">var</span> a<span class="signal">,</span> b<span class="signal">,</span> c <span class="ginal">:= </span><span class="variable-type">1</span> <span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
+                        <span>
+                            <span class="signal">imprima</span> <span class="caractere">"Olá !"</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Atribuição paralela: a := 2, b := 1 e c := 4</div>
+                    <div class="title-demonstration-documentation">Saída usando variável</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_7"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ENTR_SA_8"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        a<span class="signal">,</span> b<span class="signal">,</span> c <span class="signal">:=</span> b<span class="signal">,</span> a<span class="signal">,</span> <span class="variable-type">4</span>
+                        <span>
+                            nome <span class="signal">=</span> <span class="caractere">"Mundo"</span>
+                            <span class="line-down">
+                                <span class="signal">escreva</span> <span class="caractere">"Olá {</span>nome<span class="caractere">} !</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
-                
             </section>
         </section>
     </main>

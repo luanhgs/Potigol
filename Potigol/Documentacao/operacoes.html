@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
     <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Variáveis</title>
+    <title>Potigol | Operações</title>
     <link rel="stylesheet" href="../assets/css/header_nav.css">
     <link rel="stylesheet" href="../assets/css/padroes.css">
     <link rel="stylesheet" href="../assets/css/content.css">
@@ -96,8 +96,8 @@
                 </button>
             </div>
             <ul class="list-items-documentation">
-                <li class="item"><a class="item-active" href="variaveis.html">Variáveis</a></li>
-                <li class="item"><a href="operacoes.html">Operações</a></li>
+                <li class="item"><a href="variaveis.html">Variáveis</a></li>
+                <li class="item"><a class="item-active" href="operacoes.html">Operações</a></li>
                 <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
                 <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
             </ul>
@@ -105,110 +105,236 @@
             <script src="../assets/js/menu.js"></script>
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Variáveis</h2>
+            <h2 class="title-documentation">Operações</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Tipos Básicos</h3>
-                <table class="simple-documentation-table">
-                    <tr class="table-head">
-                        <td>Tipos</td>
-                        <td>Valores</td>
-                    </tr>
-                    <tr>
-                        <td>Inteiro</td>
-                        <td>-4, 0, 5, …</td>
-                    </tr>
-                    <tr>
-                        <td>Real</td>
-                        <td>-7.23, 0.0, 5.25, …</td>
-                    </tr>
-                    <tr>
-                        <td>Texto</td>
-                        <td>"texto", "ola", "mundo", …</td>
-                    </tr>
-                    <tr>
-                        <td>Lógico</td>
-                        <td>Verdadeiro e Falso</td>
-                    </tr>
-                    <tr>
-                        <td>Caractere</td>
-                        <td>'a', '4', '&', …</td>
-                    </tr>
-                </table>
-            </section>
-            <section class="section-documentation">
-                <h3 class="title-section-documentation">Declaração de Variáveis</h3>
+                <h3 class="title-section-documentation">Operações Aritméticas</h3>
+
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração de um valor fixo (não pode ser alterado)</div>
+                    <div class="title-demonstration-documentation">Soma</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <span>
-                            x <span class="signal">=</span> <span class="variable-type">10</span>
+                            <span class="variable-type">5</span> <span class="signal">+</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: 8</span>
+                            </span>
                         </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Mais de uma variável recebe o mesmo valor y = 20 e z = 20</div>
+                    <div class="title-demonstration-documentation">Subtração</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_2"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_2"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        y<span class="signal">,</span>z <span class="signal">=</span> <span class="variable-type">20</span>
+                        <span>
+                            <span class="variable-type">5</span> <span class="signal">-</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: 2</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração paralela: a = 1, b = 2 e c = 3</div>
+                    <div class="title-demonstration-documentation">Multiplicação</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_3"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_3"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        a<span class="signal">,</span> b<span class="signal">,</span> c = <span class="variable-type">1</span><span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
+                        <span>
+                            <span class="variable-type">5</span> <span class="signal">*</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: 15</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração de uma variável alterável</div>
+                    <div class="title-demonstration-documentation">Divisão Real</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_4"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_4"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span class="signal">var</span> y <span class="signal">:=</span> <span class="variable-type">10</span>
+                        <span>
+                            <span class="variable-type">5</span> <span class="signal">/</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: 1.6667</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Atribuição de um valor a uma variável</div>
+                    <div class="title-demonstration-documentation">Divisão Inteira</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_5"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_5"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        y <span class="signal">:=</span> y <span class="signal">+</span> <span class="variable-type">2</span>
+                        <span>
+                            <span class="variable-type">5</span> <span class="signal">div</span> <span class="variable-type">3</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Declaração paralela: var a := 1, var b := 2 e var c := 3</div>
+                    <div class="title-demonstration-documentation">Resto da Divisão</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_6"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_6"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span class="signal">var</span> a<span class="signal">,</span> b<span class="signal">,</span> c <span class="ginal">:= </span><span class="variable-type">1</span> <span class="signal">,</span> <span class="variable-type">2</span><span class="signal">,</span> <span class="variable-type">3</span>
+                        <span>
+                            <span class="variable-type">5</span> <span class="signal">mod</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: 2</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Operações Lógicas e Relacionais</h3>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Uso do "e"</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_7"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">verdadeiro</span> <span class="signal">e</span> <span class="variable-type">falso</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: falso</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Atribuição paralela: a := 2, b := 1 e c := 4</div>
+                    <div class="title-demonstration-documentation">Uso do "ou"</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="VARIAVEIS_7"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="OPERA_8"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        a<span class="signal">,</span> b<span class="signal">,</span> c <span class="signal">:=</span> b<span class="signal">,</span> a<span class="signal">,</span> <span class="variable-type">4</span>
+                        <span>
+                            <span class="variable-type">verdadeiro</span> <span class="signal">ou</span> <span class="variable-type">falso</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: verdadeiro</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
-                
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Uso do "não"</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_9"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="signal">não</span> <span class="variable-type">verdadeiro</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: falso</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Teste de igualdade</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_10"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">2</span> <span class="signal">==</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: falso</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Teste de desigualdade</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_11"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">2</span> <span class="signal"><></span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: verdadeiro</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Menor</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_12"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">2</span> <span class="signal"><</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: verdadeiro</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Menor ou igual</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_13"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">2</span> <span class="signal"><=</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: verdadeiro</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Maior</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_14"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">2</span> <span class="signal">></span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: falso</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="demonstration-documentation">
+                    <div class="title-demonstration-documentation">Maior ou igual</div>
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="OPERA_15"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <span>
+                            <span class="variable-type">2</span> <span class="signal">>=</span> <span class="variable-type">3</span>
+                            <span class="line-down">
+                                <span class="comment">#Resultado: falso</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+  
             </section>
         </section>
     </main>
