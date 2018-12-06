@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#FC814A"/>
     <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
     <title>Potigol | Funções</title>
+    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Função, Funcões"/>
     <link rel="stylesheet" href="../assets/css/header_nav.css">
     <link rel="stylesheet" href="../assets/css/padroes.css">
     <link rel="stylesheet" href="../assets/css/content.css">
@@ -116,38 +117,38 @@
                 <div class="demonstration-documentation">
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="ESTR_CONDICIONAIS_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="FUNCOES_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <pre class="multi-line-code-field-demonstration">
-soma<span class="signal">(</span>x<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">, </span>y<span class="signal">:</span><span class="variable-type"> Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y           <span class="comment"># Declaração de função em uma linha </span>
+soma<span class="signal">(</span>x<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">, </span>y<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y  <span class="comment"># Declaração de função em uma linha </span>
  
-soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y                        <span class="comment"># Agrupando parâmetros do mesmo tipo </span>
+soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y           <span class="comment"># Agrupando parâmetros do mesmo tipo </span>
  
-rep<span class="signal">(</span>a<span class="signal">: </span><span class="variable-type"> Texto</span><span class="signal">, </span>n<span class="signal">:</span><span class="variable-type"> Inteiro</span><span class="signal">) =</span> x<span class="signal"> + </span>y              <span class="comment"># Funções com parâmetros de tipos diferentes </span>
+rep<span class="signal">(</span>a<span class="signal">: </span><span class="method">Texto</span><span class="signal">, </span>n<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) =</span> x<span class="signal"> * </span>y     <span class="comment"># Funções com parâmetros de tipos diferentes </span>
 
-a<span class="signal">, </span>b <span class="signal">= </span><span class="variable-type"> leia_inteiro</span>
-c<span class="signal"> = </span>soma<span class="signal">(</span>a<span class="signal">, </span>b<span class="signal">)</span>                                          <span class="comment"># Funções com parâmetros de tipos diferentes </span>
+a<span class="signal">, </span>b <span class="signal">= </span><span class="method">leia_inteiro</span>
+c<span class="signal"> = </span>soma<span class="signal">(</span>a<span class="signal">, </span>b<span class="signal">)</span>                        <span class="comment"># Funções com parâmetros de tipos diferentes </span>
 <span class="signal">escreva </span><span class="caractere">"{</span>a<span class="caractere">} + {</span>b<span class="caractere">} = </span><span class="caractere">{</span>c<span class="caractere">}"</span>
 
-soma<span class="signal">(</span>x<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">, </span>y<span class="signal">)</span><span class="variable-type"> Inteiro</span><span class="signal"> =</span> x <span class="signal">+ </span>y          <span class="comment">#O tipo de retorno pode ser definido explicitamente</span>          
+soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">)<span class="signal">:</span></span><span class="method"> Inteiro</span><span class="signal"> =</span> x <span class="signal">+ </span>y  <span class="comment">#O tipo de retorno pode ser definido explicitamente</span>          
 
-soma<span class="signal">(</span>x<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">, </span>y<span class="signal">)</span>          <span class="comment"># Declaração de função com corpo</span>
+soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal"></span><span class="signal">)</span>                   <span class="comment"># Declaração de função com corpo</span>
 c</span><span class="signal"> = </span> x <span class="signal">+ </span>y
-c                                       <span class="comment"># A palavra 'retorne' é opcional</span>
+c                                     <span class="comment"># A palavra 'retorne' é opcional</span>
 <span class="signal">fim</span>
 
-fatorial<span class="signal">(</span>n<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">): </span><span class="variable-type"> Inteiro</span>          <span class="comment">#  Função recursiva (tipo de retorno é obrigatório)</span>
+fatorial<span class="signal">(</span>n<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">): </span><span class="method"> Inteiro</span>        <span class="comment">#  Função recursiva (tipo de retorno é obrigatório)</span>
     <span class="signal">se </span>n <span class="signal"><= </span><span class="variable-type">1 </span><span class="signal"> então</span>
         <span class="variable-type">1</span>
     <span class="signal">senão</span>
         n<span class="signal"> * </span> fatorial<span class="signal">(</span>n <span class="signal">- </span><span class="variable-type">1</span><span class="signal">)</span>
     <span class="signal">fim</span>
 <span class="signal">fim</span> 
-a<span class="signal"> = </span><span class="variable-type">leia_inteiro</span>
-<span class="signal">escreva</span> <span class="caractere">"Fatorial de {"</span>a<span class="caractere">} é {</span>fatorial<span class="signal">(</span>a<span class="signal">)</span> <span class="caractere">}"</span>           
+a<span class="signal"> = </span><span class="method">leia_inteiro</span>
+<span class="signal">escreva</span> <span class="caractere">"Fatorial de {</span>a<span class="caractere">} é {</span>fatorial<span class="signal">(</span>a<span class="signal">)</span> <span class="caractere">}"</span>           
 
-f<span class="signal">(</span>a<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">)</span>
-    g<span class="signal">(</span>b<span class="signal">: </span><span class="variable-type">Inteiro</span><span class="signal">) =</span>b <span class="signal">* </span><span class="variable-type">2</span>         <span class="comment"># Função interna</span>
+f<span class="signal">(</span>a<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">)</span>
+    g<span class="signal">(</span>b<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">) =</span>b <span class="signal">* </span><span class="variable-type">2</span>              <span class="comment"># Função interna</span>
     <span class="signal">retorne </span>g<span class="signal">(</span>a<span class="signal">) +</span><span class="variable-type"> 3</span>
 <span class="signal">fim</span>
                         </pre>

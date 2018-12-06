@@ -200,6 +200,204 @@ sinal = escolha x               # escolha retorna um número: -1, 0 ou 1\n \
     caso n se n > 0 =>  1\n \
     caso _                =>  0\n \
 fim"
+    },
+    //ESTRUTURAS DE REPETIÇÃO
+    {
+        id: "ESTR_REPETICAO_1",
+        codigo:
+"para i de 1 até 10 faça                        # escreve os números de 1 a 10\n \
+    escreva i\n \
+fim\n \
+\n \
+var soma := 0\n \
+para i de 1 até 10 faça                        # soma os números de 1 a 10\n \
+    soma := soma + i\n \
+fim\n \
+    escreva \"A soma é {soma}.\"\n \
+\n \
+var soma := 0\n \
+para i de 1 até 10 faça                       # escreve os números ímpares de 1 a 10\n \
+    escreva i\n \
+fim\n \
+\n \
+# Para decrescente\n \
+para i de 1 até 1 passo -1 faça          # escreve os númeos de 10 a 1\n \
+    escreva i\n \
+fim\n \
+\n \
+# Para com mais um gerador\n \
+para i de 1 até 4 ,\n \
+    j de 1 até 3 faça\n \                              # escreve a tabuada de {1..4} x {1..3}\n \
+    escreva \"{i} * {j} == {i * j}\"\n \
+fim\n \
+\n \
+# Para com listas\n \
+cores = [\"azul\", \"vermelho\", \"verde\"]\n \
+para cor em cores faça\n \
+    escreva cor\n \
+fim\n \
+\n \
+# Para gerando uma lista\n \
+numeros = para i de 1 até 5 gere i fim                              #  [1, 2, 3, 4, 5]\n \
+\n \
+pares = para i de 1 até 10 se i mod 2  == 0 gere  i fim    #  [2, 4, 5, 6, 8, 10]"
+    },
+    {
+        id: "ESTR_REPETICAO_2",
+        codigo:
+"var i := 0\n \
+    enquanto i <=10 faça\n \
+        escreva i\n \
+        i :=  i + 1\n \
+fim"
+    },
+    //FUNÇÕES
+    {
+        id: "FUNCOES_1",
+        codigo:
+"soma(x: Inteiro, y: Inteiro) = x + y   # Declaração de função em uma linha\n\
+\n\
+soma(x, y: Inteiro) = x + y             # Agrupando parâmetros do mesmo tipo\n\
+\n\
+rep(a: Texto, n: Inteiro) = a * n       # Funções com parâmetros de tipos diferentes\n\
+\n\
+a, b = leia_inteiro\n\
+c = soma(a, b)                          # Aplicando a função\n\
+escreva \"{a} + {b} = {c}\"\n\
+\n\
+soma(x, y: Inteiro): Inteiro = x + y    # O tipo de retorno pode ser definido explicitamente\n\
+\n\
+soma(x, y: Inteiro)                     # Declaração de função com corpo\n\
+    c = x + y\n\
+    retorne c                           # A última linha tem o valor de retorno\n\
+fim\n\
+\n\
+soma(x, y: Inteiro)                     # Declaração de função com corpo\n\
+    c = x + y\n\
+    c                                   # A palavra 'retorne' é opcional \n\
+fim\n\
+\n\
+fatorial(n: Inteiro): Inteiro           # Função recursiva (tipo de retorno é obrigatório)\n\
+    se n <= 1 então\n\
+    1\n\
+    senão\n\
+    n * fatorial(n - 1)\n\
+    fim\n\
+fim\n\
+a = leia_inteiro\n\
+escreva \"Fatorial de {a} é {fatorial(a)}\"\n\
+\n\
+f(a: Inteiro)\n\
+    g(b: Inteiro) = b * 2                 # Função interna\n\
+    retorne g(a) + 3\n\
+fim"
+    },
+    //PROGRAMAÇÃO ORIENTADA A OBJETOS
+    {
+        id: "PROGRAM_OBJETOS_1",
+        codigo: 
+"# Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamenteum atributo.\n\
+\n\
+# Declaração de um Tipo (Classe)\n\
+\n\
+tipo «Tipo»\n\
+    «[var]» «lista de atributos do construtor» : «tipo»\n\
+    «[var]» «atributos» = «valor»\n\
+    «métodos»\n\
+fim\n\
+\n\
+«obj» = «Tipo»(«lista de valores do construtor»)\n\
+«obj».«atributo»\n\
+«obj».«método»"
+    },
+    {
+        id: "PROGRAM_OBJETOS_2",
+        codigo:
+"tipo Quadrado\n\
+    lado: Real\n\
+    area() = lado * lado\n\
+    perimetro() = 4 * lado\n\
+fim\n\
+\n\
+q1 = Quadrado(10)\n\
+escreva q1.area\n\
+escreva q1.perimetro"
+    },
+    //PROGRAMAÇÃO FUNCIONAL
+    {
+        id: "PROGRAM_FUNCIONAL_1",
+        codigo: "nome = \"potigol\""
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_2",
+        codigo: 
+"lista1 = [1,2,3,4]\n\
+lista2 = 0::lista1"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_3",
+        codigo:
+"numeros = [1, 2, 3, 4, 5, 6, 7, 8]\n\
+pares = numeros.selecione(n => n mod 2 == 0)    # filtro\n\
+soma = numeros.injete(0)((a,b) => a + b)        # fold\n\
+dobro = numeros.mapeie(n => n * 2)              # map"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_4",
+        codigo:
+"x = (a: Inteiro) => a * 2\n\
+escreva x(4)"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_5",
+        codigo:
+"y = para i de 1 até 10,\n\
+        j de i + 1 até 10 gere\n\
+        i+j\n\
+    fim\n\
+escreva y"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_6",
+        codigo:
+"f(g: Inteiro => Inteiro, a: Inteiro) =  g(a)\n\
+sucessor(n: Inteiro) = n + 1\n\
+escreva f(sucessor, 5)"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_7",
+        codigo:
+"soma(a: Inteiro) = ((b: Inteiro) => a + b)\n\
+escreva soma(2)(3)\n\
+suc = soma(1)\n\
+escreva suc(4)"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_8",
+        codigo:
+"h(a, cont: Inteiro): Inteiro = escolha a\n\
+    caso 0 => cont\n\
+    caso n => h(a-1, cont+1)\n\
+fim\n\
+escreva h(1000,0)"
+    },
+    {
+        id: "PROGRAM_FUNCIONAL_9",
+        codigo: 
+"#QuickSort\n\
+quicksort(num: Lista[Inteiro]): Lista[Inteiro] = \n\
+    escolha num\n\
+        caso []  => []\n\
+        caso pivo::resto => \n\
+            menores = resto.selecione( _ <= pivo )\n\
+            maiores = resto.selecione( _ >  pivo )\n\
+            quicksort(menores) + pivo::quicksort(maiores)\n\
+    fim\n\
+\n\
+escreva \"Digite alguns números separados por espaços\"\n\
+numeros = leia_inteiros(\" \")\n\
+escreva \"Os números ordenados:\"\n\
+escreva quicksort(numeros)"
     }
 ];
 
@@ -221,7 +419,6 @@ function getcodigo(id){
             return codigos[i].codigo;
     }
 }
-
 // Copies a string to the clipboard. Must be called from within an event handler such as click.
 // May return false if it failed, but this is not always
 // possible. Browser support for Chrome 43+, Firefox 42+, Edge and IE 10+.

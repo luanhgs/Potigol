@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
     <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Estruturas Condicionais</title>
+    <title>Potigol | Programação Orientada a Objetos</title>
+    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Objetos, Orientada"/>
     <link rel="stylesheet" href="../assets/css/header_nav.css">
     <link rel="stylesheet" href="../assets/css/padroes.css">
     <link rel="stylesheet" href="../assets/css/content.css">
@@ -110,18 +111,17 @@
             <script src="../assets/js/menu.js"></script>
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Programação</h2>
+            <h2 class="title-documentation">Programação Orientada a Objetos</h2>
+            <h2 class="sub-title-documentation">Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamente um atributo.</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Programação Orientada a Objetos</h3>
+                <h3 class="title-section-documentation">Declaração de um Tipo (Classe)</h3>
                 <div class="demonstration-documentation">
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="ESTR_CONDICIONAIS_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_OBJETOS_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <pre class="multi-line-code-field-demonstration">
-<span class="comment"># Classes são definidas através de tipos. Os tipos são compostos por atributos
-e métodos (funções). Todos elementos de um tipo são públicos, mas não é 
-possível alterar diretamenteum atributo.</span>
+<span class="comment"># Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamenteum atributo.</span>
 
 <span class="comment"># Declaração de um Tipo (Classe)</span>
 
@@ -143,13 +143,13 @@ possível alterar diretamenteum atributo.</span>
                 <div class="demonstration-documentation">
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="ESTR_CONDICIONAIS_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_OBJETOS_2"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <pre class="multi-line-code-field-demonstration">
 <span class="signal">tipo </span>Quadrado
-    lado<span class="signal">:</span><span class="variable-type"> Real</span>
-    area<span class="signal">() = </span>lado <span class="signal">*</span>lado
-    perimetro<span class="signal">() = </span><span class="variable-type">4</span><span class="signal">* </span>lado
+    lado<span class="signal">:</span><span class="method"> Real</span>
+    area<span class="signal">() = </span>lado <span class="signal">*</span> lado
+    perimetro<span class="signal">() = </span><span class="variable-type">4</span><span class="signal"> * </span>lado
 <span class="signal">fim</span>
 
 q1<span class="signal"> =</span> Quadrado<span class="signal">(</span><span class="variable-type">10</span><span class="signal">)</span>
