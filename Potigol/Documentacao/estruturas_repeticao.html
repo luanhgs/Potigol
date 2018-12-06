@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
     <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-<<<<<<< HEAD
-    <title>Potigol | Entrada e Saída</title>
-=======
-    <title>Potigol | Operações</title>
->>>>>>> f653e0cf994d02da82f01e2136979dc7d9813a03
+    <title>Potigol | Estruturas de Repetição</title>
     <link rel="stylesheet" href="../assets/css/header_nav.css">
     <link rel="stylesheet" href="../assets/css/padroes.css">
     <link rel="stylesheet" href="../assets/css/content.css">
@@ -102,133 +98,85 @@
             <ul class="list-items-documentation">
                 <li class="item"><a href="variaveis.html">Variáveis</a></li>
                 <li class="item"><a href="operacoes.html">Operações</a></li>
-                <li class="item"><a class="item-active" href="entrada_e_saida.html">Entrada e Saída</a></li>
+                <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
                 <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
-<<<<<<< HEAD
-                <li class="item"><a href="estruturas_repeticao.html">Estruturas de Repetição</a></li>
+                <li class="item"><a class="item-active" href="estruturas_repeticao.html">Estruturas de Repetição</a></li>
                 <li class="item"><a href="funcoes.html">Funções</a></li>
                 <li class="item"><a href="parametros.html">Parâmetros</a></li>
                 <li class="item"><a href="programacao_orientada.html">Programação Orientada</a></li>
                 <li class="item"><a href="programacao_funcional.html">Programação Funcional</a></li>
-=======
->>>>>>> f653e0cf994d02da82f01e2136979dc7d9813a03
             </ul>
             <script src="../assets/js/pesquisa_documentacao.js"></script>
             <script src="../assets/js/menu.js"></script>
         </section>
         <section class="content-documentation">
-<<<<<<< HEAD
-            <h2 class="title-documentation">Entrada e Saída</h2>
-=======
-            <h2 class="title-documentation">Operações</h2>
->>>>>>> f653e0cf994d02da82f01e2136979dc7d9813a03
+            <h2 class="title-documentation">Estruturas de Repetição</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Entrada</h3>
-
+                <h3 class="title-section-documentation">Para</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Lê um número inteiro do teclado</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ESTR_CONDICIONAIS_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            a <span class="signal">=</span> <span class="method">leia_inteiro</span>
-                        </span>
-                    </div>
-                </div>
+                        <pre class="multi-line-code-field-demonstration">
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">faça</span>                        <span class="comment"># escreve os números de 1 a 10</span>
+    <span class="signal">escreva</span> i
+<span class="signal">fim</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Lê um número real do teclado</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_2"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            b <span class="signal">=</span> <span class="method">leia_real</span>
-                        </span>
-                    </div>
-                </div>
+<span class="signal">var</span> soma <span class="signal">:=</span> <span class="variable-type">0</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">faça</span>                        <span class="comment"># soma os números de 1 a 10</span>
+    soma <span class="signal">:=</span> soma<span class="signal"> +</span> i
+<span class="signal">fim</span>
+    <span class="signal">escreva</span> <span class="caractere">"A soma é {</span>soma<span class="caractere">}."</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Lê um texto do teclado</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_3"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            c <span class="signal">=</span> <span class="method">leia_texto</span>
-                        </span>
-                    </div>
-                </div>
+<span class="signal">var</span> soma <span class="signal">:=</span> <span class="variable-type">0</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">faça</span>                       <span class="comment"># escreve os números ímpares de 1 a 10</span>
+    <span class="signal">escreva</span> i
+<span class="signal">fim</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Lê um lista de 5 números inteiros, um por linha</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_4"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            números <span class="signal">=</span> <span class="method">leia_inteiros</span> <span class="signal">(</span><span class="variable-type">5</span><span class="signal">)</span>
-                        </span>
-                    </div>
-                </div>
+<span class="comment"># Para decrescente</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">1 </span><span class="signal">passo -</span><span class="variable-type">1 </span><span class="signal">faça</span>          <span class="comment"># escreve os númeos de 10 a 1</span>
+    <span class="signal">escreva</span> i
+<span class="signal">fim</span>
 
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Lê uma lista de números inteiros separados por vírgula</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_5"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            números <span class="signal">=</span> <span class="method">leia_inteiros</span> <span class="signal">(</span><span class="caractere">","</span><span class="signal">)</span>
-                        </span>
+<span class="comment"># Para com mais um gerador</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">4 </span><span class="signal">,</span>
+    j <span class="signal">de </span><span class="variable-type">1</span><span class="signal"> até </span><span class="variable-type">3</span><span class="signal"> faça</span>                              <span class="comment"># escreve a tabuada de {1..4} x {1..3}</span>
+    <span class="signal">escreva</span> <span class="caractere">"{</span>i<span class="caractere">} * {</span>j<span class="caractere">} == {</span>i<span class="signal"> * </span>j<span class="caractere">}"</span>
+<span class="signal">fim</span>
+
+<span class="comment"># Para com listas</span>
+cores<span class="signal"> = [</span><span class="caractere">"azul"</span><span class="signal">,</span> vermelho<span class="caractere">", "</span>verde<span class="caractere">"</span><span class="signal">]</span>
+<span class="signal">para</span> cor<span class="signal"> em</span> cores<span class="signal"> faça</span>
+    <span class="signal">escreva</span> cor
+<span class="signal">fim</span>
+
+<span class="comment"># Para gerando uma lista</span>
+numeros<span class="signal"> = </span><span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">5 </span><span class="signal">gere</span> i <span class="signal">fim</span>                              <span class="comment">#  [1, 2, 3, 4, 5]</span>
+
+pares<span class="signal"> = </span><span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">se</span> i <span class="signal">mod </span>2 <span class="signal"> == </span>0 <span class="signal">gere </span> i <span class="signal">fim</span>    <span class="comment">#  [2, 4, 5, 6, 8, 10]</span>
+                        </pre>
                     </div>
                 </div>
             </section>
-
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Saída</h3>
-
+                <h3 class="title-section-documentation">Enquanto</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Escreve e passa para a próxima linha</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_6"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ESTR_CONDICIONAIS_2"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="signal">escreva</span> <span class="caractere">"Olá Mundo !"</span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Escreve e continua na mesma linha</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_7"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="signal">imprima</span> <span class="caractere">"Olá !"</span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Saída usando variável</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="ENTR_SA_8"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            nome <span class="signal">=</span> <span class="caractere">"Mundo"</span>
-                            <span class="line-down">
-                                <span class="signal">escreva</span> <span class="caractere">"Olá {</span>nome<span class="caractere">} !</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+<span class="signal">var</span> i <span class="signal">:=</span> <span class="variable-type">0</span>
+    <span class="signal">enquanto</span> i <span class="signal"><=</span><span class="variable-type">10</span><span class="signal"> faça</span>
+        <span class="signal">escreva</span> i
+        i<span class="signal"> := </span> i <span class="signal">+ </span><span class="variable-type">1</span>
+<span class="signal">fim</span>
+                        </pre>
                     </div>
                 </div>
             </section>
-        </section>
+    </section>
     </main>
     <footer id="footer">
         <div class="footer-content">
@@ -238,11 +186,7 @@
                         <span class="line"></span>
                         Contato
                     </li>
-<<<<<<< HEAD
                     <li><a href="mailto:projetopoti@gmail.com">Email</a></li>
-=======
-                    <li><a href="mailto">Email</a></li>
->>>>>>> f653e0cf994d02da82f01e2136979dc7d9813a03
                 </ul>
             </div>
             <div class="footer-item-c">

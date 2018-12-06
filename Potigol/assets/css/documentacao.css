@@ -134,6 +134,14 @@
     border-radius: 12px;
     position: relative;
 }
+
+.multi-line-code-field-demonstration,
+.code-field-demonstration,
+.multi-line-code-field-demonstration span,
+.code-field-demonstration span{
+    font-family: "Courier New" !important;
+}
+
 .copied-code .multi-line-code-field-demonstration,
 .copied-code .code-field-demonstration{
     overflow: hidden !important;
