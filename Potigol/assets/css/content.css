@@ -1,6 +1,6 @@
 #content{
     margin-top: 60px;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 50px);
 }
 .has-under-header #content{
     margin: 0 !important;
@@ -46,12 +46,41 @@
 }
 
 .centering-section{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     width: 100%;
     height: auto;
+    background-color: #ffffff;
+}
+.centering-section:nth-child(3){
+    margin-top: 30px;
+}
+.centering-section .top-triangle{
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: -30px;
+}
+.centering-section .top-triangle::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    top: 1px;
+    border-left: 100vw solid transparent;
+}
+.centering-section:nth-child(even) .top-triangle::before{
+    border-bottom: 30px solid #ffffff;
+}.centering-section:nth-child(odd) .top-triangle::before{
+    border-bottom: 30px solid #f9f9f9;
+}
+.centering-section:nth-child(odd){
+    background-color: #f9f9f9;
 }
 .title-home-section{
     font-size: 20px;
@@ -76,6 +105,7 @@
     justify-content: center;
     flex-flow: row;
     flex-wrap: wrap;
+    user-select: none;
 }
 .group-caracteristicas .caracteristica-box img{
     width: 100px;
@@ -115,7 +145,7 @@
 .steps .steps-side{
     /*height: fit-content;*/
     position: relative;
-    box-shadow: 2px 3px 8px #c3b7b7;
+    /*box-shadow: 2px 3px 8px #c3b7b7;*/
     border-radius: 10px;
     transition: all 200ms ease;
 
@@ -123,10 +153,18 @@
     display: flex;
     flex-flow: column;
     margin: 10px;
+    border-top: solid 1px;
 }
-.steps .steps-side:hover{
+.steps .steps-side:nth-child(1){
+    border-top-color: #4CB7E5;
+}
+.steps .steps-side:nth-child(2){
+    border-top-color: #59e54c;
+}
+
+/*.steps .steps-side:hover{
     box-shadow: 0px 0px 8px #c3b7b7;
-}
+}*/
 .steps .steps-side .steps-side-stage{
     width: auto;
     height: auto;
@@ -161,7 +199,7 @@
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
     user-select: none;
     position: relative;
     left: 50%;
@@ -171,23 +209,22 @@
 }
 .steps .steps-side .so-windows{
     color: #4CB7E5;
-    border: solid 2px #4CB7E5;
+
 }
 .steps .steps-side .so-linux{
     color: #59e54c;
-    border: solid 2px #59e54c;
 }
 .steps .steps-side .btn-link-download{
     margin: 15px 0;
     display: block;
-    width: 100%;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     background-color: #47ce45;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 10px;
     text-transform: uppercase;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     word-spacing: 4px;
     user-select: none;
     border-radius: 21px;
