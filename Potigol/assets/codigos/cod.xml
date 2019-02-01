@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<codigos>
+
+    <!-- Variáveis -->
+    <codigo>
+        <id>VARIAVEIS_1</id>
+        <txt>x = 10</txt>
+    </codigo>
+    <codigo>
+        <id>VARIAVEIS_2</id>
+        <txt>y,z = 20</txt>
+    </codigo>
+    <codigo>
+        <id>VARIAVEIS_3</id>
+        <txt>a, b, c = 1, 2, 3</txt>
+    </codigo>
+    <codigo>
+        <id>VARIAVEIS_4</id>
+        <txt>var y := 10</txt>
+    </codigo>
+    <codigo>
+        <id>VARIAVEIS_5</id>
+        <txt>y := y + 2</txt>
+    </codigo>
+    <codigo>
+        <id>VARIAVEIS_6</id>
+        <txt>var a, b, c := 1 , 2, 3</txt>
+    </codigo>
+    <codigo>
+        <id>VARIAVEIS_7</id>
+        <txt>a, b, c := b, a, 4</txt>
+    </codigo>
+
+    <!-- Operações -->
+    <codigo>
+        <id>OPERA_1</id>
+        <txt>5 + 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_2</id>
+        <txt>5 - 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_3</id>
+        <txt>5 * 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_4</id>
+        <txt>5 / 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_5</id>
+        <txt>5 div 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_6</id>
+        <txt>5 mod 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_7</id>
+        <txt>verdadeiro e falso</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_8</id>
+        <txt>verdadeiro ou falso</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_9</id>
+        <txt>não verdadeiro</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_10</id>
+        <txt>2 == 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_11</id>
+        <txt>2 &lt;&gt; 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_12</id>
+        <txt>2 &lt; 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_13</id>
+        <txt>2 &lt;= 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_14</id>
+        <txt>2 &gt; 3</txt>
+    </codigo>
+    <codigo>
+        <id>OPERA_15</id>
+        <txt>2 &gt;= 3</txt>
+    </codigo>
+
+    <!-- Entrada e Saída -->
+    <codigo>
+        <id>ENTR_SA_1</id>
+        <txt>a = leia_inteiro</txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_2</id>
+        <txt>b = leia_real</txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_3</id>
+        <txt>c = leia_texto</txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_4</id>
+        <txt>números = leia_inteiros (5)</txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_5</id>
+        <txt>números = leia_inteiros(",")</txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_6</id>
+        <txt>escreva "Olá Mundo"</txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_7</id>
+        <txt>imprima "Olá" </txt>
+    </codigo>
+    <codigo>
+        <id>ENTR_SA_8</id>
+        <txt>
+            nome = "Mundo"
+            escreva "Olá {nome}!"
+        </txt>
+    </codigo>
+
+    <!-- Estruturas Condicionais -->
+    <codigo>
+        <id>ESTR_CONDICIONAIS_1</id>
+        <txt>
+x = leia_inteiro
+
+# se ... então ... fim
+se x > 5 então
+escreva "Maior do que cinco."
+fim
+
+# se ... então ... senão ... fim
+se x > 5 então
+escreva "Maior do que cinco."
+senão
+escreva "Menor ou igual a cinco."
+fim
+
+se verdadeiro então                # escreva "verdadeiro"
+escreva "verdadeiro"
+senão
+escreva "falso"
+fim
+
+se falso então                     # escreva "falso"
+escreva "verdadeiro"
+senão
+escreva "falso"
+fim
+
+# se ... então ... senãose ... senão ... fim
+se x > 8 então
+escreva "Maior do que oito."
+senãose x > 6 então
+escreva "Maior do que seis."
+senãose x > 4 então
+escreva "Maior do que quatro."
+senãose x > 2 então
+escreva "Maior do que dois."
+senão
+escreva "Menor ou igual a dois."
+fim
+
+# usando se como uma expressão
+a = se x mod 2 == 0 então "par" senão "ímpar" fim
+
+maior = se a >= b e a >= c então a senãose b > c então b senão c fim
+        </txt>
+    </codigo>
+    <codigo>
+        <id>ESTR_CONDICIONAIS_2</id>
+        <txt>
+x = leia_inteiro
+escolha x
+    caso 1 => escreva "Um"               # se x == 1
+    caso 2 => escreva "Dois"             # se x &lt;&gt; 1 e x == 2
+    caso 3 => escreva "Três"             # se x &lt;&gt; 1 e x &lt;&gt; 2 e x == 3
+    caso _ => escreva "Outro valor"      # se x &lt;&gt; 1 e x &lt;&gt; 2 e x &lt;&gt; 3
+fim
+
+# escolha com condições
+escolha x
+caso n se n &lt; 0        =&gt; escreva "{n} é negativo"
+caso n se n mod 2 == 0 =&gt; escreva "{n} é par"
+caso n                 =&gt; escreva "{n} é ímpar"
+fim
+
+# usando escolha como uma expressão
+é_zero = escolha x
+caso 0 =&gt; verdadeiro
+caso _ =&gt; falso
+fim
+
+sinal = escolha x               # escolha retorna um número: -1, 0 ou 1
+caso n se n &lt; 0 =&gt; -1
+caso n se n &gt; 0 =&gt;  1
+caso _          =&gt;  0
+fim
+        </txt>
+    </codigo>
+
+    <!-- Estruturas de Repetição -->
+    <codigo>
+        <id>ESTR_REPETICAO_1</id>
+        <txt>
+para i de 1 até 10 faça            # escreve os números de 1 a 10
+escreva i
+fim
+
+var soma := 0
+para i de 1 até 10 faça            # soma os números de 1 a 10
+soma := soma + i
+fim
+escreva "A soma é {soma}."
+
+para i de 1 até 10 passo 2 faça    # escreve os números ímpares de 1 a 10
+escreva i
+fim
+
+# Para decrescente
+para i de 10 até 1 passo -1 faça   # escreve os números de 10 a 1
+escreva i
+fim
+
+# Para com mais de um gerador
+para i de 1 até 4,
+    j de 1 até 3 faça             # escreve a tabuada {1..4} x {1..3}
+escreva "{i} * {j} == {i * j}"
+fim
+
+# Para com listas
+cores = ["azul", vermelho", "verde"]
+para cor em cores faça
+escreva cor
+fim
+
+# Para gerando uma lista
+numeros = para i de 1 até 5 gere i fim             # [1, 2, 3, 4, 5]
+
+pares = para i de 1 até 10 se i mod 2 == 0 gere i  # [2, 4, 5, 6, 8, 10]
+        </txt>
+    </codigo>
+    <codigo>
+        <id>ESTR_REPETICAO_2</id>
+        <txt>
+var i := 0
+enquanto i&lt;=10 faça                 # Escreve os números de 1 a 10
+    escreva i
+    i := i + 1
+fim
+        </txt>
+    </codigo>
+
+    <!-- Funções -->
+    <codigo>
+        <id>FUNCOES_1</id>
+        <txt>
+soma(x: Inteiro, y: Inteiro) = x + y    # Declaração de função em uma linha
+
+soma(x, y: Inteiro) = x + y             # Agrupando parâmetros do mesmo tipo
+
+rep(a: Texto, n: Inteiro) = a * n       # Funções com parâmetros de tipos diferentes
+    
+a, b = leia_inteiro
+c = soma(a, b)                          # Aplicando a função
+escreva "{a} + {b} = {c}"
+
+soma(x, y: Inteiro): Inteiro = x + y    # O tipo de retorno pode ser definido explicitamente
+
+soma(x, y: Inteiro)                     # Declaração de função com corpo
+c = x + y
+retorne c                             # A última linha tem o valor de retorno
+fim
+
+soma(x, y: Inteiro)                     # Declaração de função com corpo
+c = x + y
+c                                     # A palavra 'retorne' é opcional 
+fim
+
+fatorial(n: Inteiro): Inteiro           # Função recursiva (tipo de retorno é obrigatório)
+se n &lt;= 1 então
+    1
+senão
+    n * fatorial(n - 1)
+fim
+fim
+a = leia_inteiro
+escreva "Fatorial de {a} é {fatorial(a)}"
+
+f(a: Inteiro)
+g(b: Inteiro) = b * 2                 # Função interna
+retorne g(a) + 3
+fim
+        </txt>
+    </codigo>
+
+    <!-- Programação Orientada a Objetos -->
+    <codigo>
+        <id>PROGRAM_OBJETOS_1</id>
+        <txt>
+tipo «Tipo»
+    «[var]» «lista de atributos do construtor» : «tipo»
+    «[var]» «atributos» = «valor»
+    «métodos»
+fim
+
+«obj» = «Tipo»(«lista de valores do construtor»)
+«obj».«atributo»
+«obj».«método»
+        </txt>
+    </codigo>
+
+    <codigo>
+        <id>PROGRAM_OBJETOS_2</id>
+        <txt>
+tipo Quadrado
+    lado: Real
+    area() = lado * lado
+    perimetro() = 4 * lado
+fim
+
+q1 = Quadrado(10)
+escreva q1.area
+escreva q1.perimetro
+        </txt>
+    </codigo>
+
+    <!-- Programação Funcional -->
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_1</id>
+        <txt>nome = "potigol"</txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_2</id>
+        <txt>
+lista1= [1, 2, 3, 4]
+lista2= 0::lista1
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_3</id>
+        <txt>
+numero= [1, 2, 3, 4, 5, 6, 7, 8]
+pares = numeros.selecione(n => n mod 2 == 0)   # filtro
+soma = numeros.injete(0)((a,b) => a + b)       # fold
+dobro = numeros.mapeie(x) => n * 2)            # map
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_4</id>
+        <txt>
+x = (a: Inteiro) => a * 2
+escreva x(4)
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_5</id>
+        <txt>
+y = para i de 1 até 10
+        j de i + 1 até 10 gere
+                i+j
+    fim
+escreva y
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_6</id>
+        <txt>
+f(g: Inteiro => Inteiro, a:Inteiro) = g(a)
+sucessor(n:Inteiro) = n + 1
+escreva f(sucessor, 5)
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_7</id>
+        <txt>
+soma(a:Inteiro((b:Inteiro) => a + b)
+escreva soma(2)(3)
+suc = soma(1)
+escreva suc(4)
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_8</id>
+        <txt>
+h(a, cont:Inteiro):Inteiro = escolha a
+        caso 0 =>cont
+        caso n =>  h(a - 1, cont +1)
+fim
+escreva h(1000,0)
+        </txt>
+    </codigo>
+    <codigo>
+        <id>PROGRAM_FUNCIONAL_9</id>
+        <txt>
+#QuickSort
+quicksort(num: Lista[Inteiro]): Lista[Inteiro] =
+        escolha num
+            caso []  =>  []
+            caso pivo :: resto =>
+                    menores =  resto.selecione( _ &lt;=  pivo
+                    maiores = resto.selecione( _ &lt;=  pivo
+                    quicksort(menores) + pivo ::  quicksort( maiores)
+        fim
+escreva "Digite alguns números separados or espaço"
+numeros = leia_inteiros(" ")
+escreva "Os números ordenados: "
+escreva quicksort(numeros)
+        </txt>
+    </codigo>
+</codigos>
