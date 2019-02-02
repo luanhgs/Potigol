@@ -3,266 +3,180 @@
     justify-content: center;
     flex-flow: row;
 }
-.projetos{
-    margin-top: 20px;
+.projetos-cards{
+    margin: 40px 0;
     width: 90%;
-    max-width: 940px;
     height: auto;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-auto-rows: 200px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-auto-rows: 250px;
+    justify-content: space-around;
 }
-.projetos .box-projeto{
-    box-shadow: 0px 0px 1px #bba9a9;
-    margin: 6.66666666666px;
-    border-radius: 5px;
+.projetos-cards .card-projeto{
+    margin: 20px 0;
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
-    cursor: pointer;
-    transition: all 600ms ease;
 }
-.projetos .box-projeto:hover,
-.projetos .box-projeto:focus{
-    transform: scale(1.03, 1.03);
+.projetos-cards .card-projeto:hover .back-img{
+    transform: scale(1.1);
 }
-.projetos .box-projeto::before{
-    content: '';
+.projetos-cards .card-projeto .back-img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 101%;
-    height: 101%;
-    background: #fc814a; 
-    background: -webkit-linear-gradient(to top, #fc814a, #b9b7b4);
-    background: linear-gradient(to top, #fc814a, #b9b7b4);
-    opacity: .55;
-    z-index: 2;
-}
-.projetos .box-projeto::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 101%;
-    height: 101%;
-    opacity: 0;
-    z-index: 4;
-    transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.projetos .box-projeto:hover::after,
-.projetos .box-projeto:focus::after{
-    opacity: .2;
-}
-.projetos .box-projeto .info-ico{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    transition: all 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.projetos-cards .card-projeto .back-img .touch-ico{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .projetos-cards .card-projeto .back-img .touch-ico{
+        position: absolute;
+        left: calc(50% - 40px);
+        top: calc(50% - 60px);
+        z-index: 3;
+        display: block;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/icons/svg/touch.svg");
+        background-size: 100%;
+
+        animation-name: animaTouch;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .projetos-cards .card-projeto:hover .back-img .touch-ico{
+        display: none;
+    }
+    @keyframes animaTouch{
+        0%{
+            transform: scale(1);
+            opacity: 0;
+        }
+        79%{
+            opacity: 0;
+        }
+        80%{
+            transform: scale(1.01);
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1.1);
+            opacity: 0;
+        }
+    }
+}
+
+.projetos-cards .card-projeto .back-img::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #403d3d;
+    opacity: .65;
+}
+.projetos-cards .card-projeto .back-img > .img{
+    width: 100%;
+    height: 100%;
+    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.projetos-cards .card-projeto .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: calc(100% - 50px);
+    left: 0;
+    transition: all 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+} 
+.projetos-cards .card-projeto .content > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.projetos-cards .card-projeto .content::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fc814a;
+    z-index: 1;
+    transition: all 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.projetos-cards .card-projeto:hover .content{
+    top: 0;
+}
+.projetos-cards .card-projeto:hover .content::after{
+    opacity: .65;
+}
+.projetos-cards .card-projeto .content .top{
+    width: 100%;
     display: flex;
+    flex-flow: row;
     align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-transform: uppercase;
+    font-size: 14px;
 }
-.projetos .box-projeto:hover .info-ico,
-.projetos .box-projeto:focus .info-ico{
-    opacity: 1;
+.projetos-cards .card-projeto .content .top .nome{
+    width: calc(100% - 80px);
+    color: white;
+    padding: 0 15px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.projetos .box-projeto .info-ico > .ico{
-    display: block;
+
+.projetos-cards .card-projeto .content .top .git-link{
     width: 50px;
     height: 50px;
-    background-image: url("../img/icons/svg/info.svg");
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 200ms ease;
-    transform: scale(0,0);
-}
-.projetos .box-projeto:hover .info-ico > .ico,
-.projetos .box-projeto:focus .info-ico > .ico{
-    transform: scale(1,1);
-}
-.projetos .box-projeto .name-proj{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    z-index: 3;
-    line-height: 60px;
-    text-indent: 10px;
-    user-select: none;
-    color: #ffffff;
-}
-
-@media screen and (max-width: 920px){
-    .projetos{
-        grid-template-columns: 50% 50%;
-        grid-auto-rows: 200px;
-    }
-}
-@media screen and (max-width: 500px){
-    .projetos{
-        grid-template-columns: 100%;
-    }
-}
-
-.projeto-open #view-projeto{
-    display: flex;
-}
-#view-projeto{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    z-index: 2;
-}
-#view-projeto::before{
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: black;
-    opacity: .4;
-}
-#view-projeto .projeto{
-    width: 90%;
-    max-width: 900px;
-    height: 500px;
-    top: 60px;
-    position: absolute;
-    z-index: 2;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-}
-#view-projeto .projeto .btn-close-projeto{
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    transition: transform 200ms cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 3;
-}
-#view-projeto .projeto .btn-close-projeto:hover,
-#view-projeto .projeto .btn-close-projeto:focus{
-    transform: scale(1.1,1.1);
-}
-#view-projeto .projeto .btn-close-projeto .line-btn{
-    width: 30px;
-    height: 2px;
-    background-color: #ffffff;
-    position: absolute;
-    left: 2.5px;
-}
-#view-projeto .projeto .btn-close-projeto .line-btn:nth-child(1){
-    transform: rotate(45deg);
-}
-#view-projeto .projeto .btn-close-projeto .line-btn:nth-child(2){
-    transform: rotate(-45deg);
-}
-#view-projeto .projeto .img-title-projeto{
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    user-select: none;
-}
-#view-projeto .projeto .img-title-projeto .title{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #ffffff;
-    z-index: 2;
-    font-size: 25px;
-    user-select: none;
-}
-#view-projeto .projeto .img-title-projeto::before{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #614385;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc814a, #053035);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc814a, #053035); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    opacity: .8;
-    content: '';
-    z-index: 2;
-}
-#view-projeto .projeto .img-title-projeto img{
-    width: 100%;
-    position: absolute;
-}
-#view-projeto .projeto .desc{
-    padding: 30px 30px 0;
-    height: 160px;
-}
-#view-projeto .projeto .desc span{
-    max-height: 160px;
-    overflow: auto;
-    display: block;
-}
-@media screen and (min-width: 750px){
-    #view-projeto .projeto .desc span::-webkit-scrollbar {
-        width: 10px;
-    }
-    #view-projeto .projeto .desc span::-webkit-scrollbar-track {
-        background: #dedad8; 
-    }
-    #view-projeto .projeto .desc span::-webkit-scrollbar-thumb {
-        background: #7cc6c7;
-    }
-    #view-projeto .projeto .desc span::-webkit-scrollbar-thumb:hover {
-        background: #5aa9aa;
-    }
-}
-#view-projeto .projeto .opt{
-    padding: 0 30px;
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
-}
-#view-projeto .projeto .opt .btn-opt{
-    width: 30px;
-    height: 30px;
-    border: solid 2px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-    transition: all 200ms ease;
 }
-#view-projeto .projeto .opt .btn-github{
-    border-color: #068587;
-    background-color: #068587;
+.projetos-cards .card-projeto .content .top .git-link > svg{
+    width: 30px;
+}
+.projetos-cards .card-projeto .content .top .git-link > svg path{
+    fill: white !important;
+}
+.projetos-cards .card-projeto .content .desc{
     color: white;
+    font-size: 13px;    
+    padding: 0 15px;
+
+    line-height: 20px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 8;
+    -moz-line-clamp: 8;
+    -ms-line-clamp: 8;
+    line-clamp: 8;
+    overflow: hidden;
+
+    height: calc(100% - 50px);
+    cursor: default;
 }
-#view-projeto .projeto .opt .btn-github:hover,
-#view-projeto .projeto .opt .btn-github:focus{
-    border-color: #056466;
-    background-color: #056466;
-}
-@media screen and (max-width: 750px){
-    #view-projeto{
-        justify-content: inherit;
+@media screen and (max-width: 900px){
+    .projetos-cards{
+        grid-template-columns: 45% 45%;
     }
-    #view-projeto .projeto{
-        top: 20px;
+}
+@media screen and (max-width: 600px){
+    .projetos-cards{
+        grid-template-columns: 90%;
     }
 }

@@ -53,7 +53,6 @@ function animateOnScroll(){
             el.classList.add("after-animate-on-scroll");
         }
     });
-    //console.log(pageY);
 }
 
 //scroll top
