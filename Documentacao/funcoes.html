@@ -4,21 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
-    <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Programação Orientada a Objetos</title>
-    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Objetos, Orientada"/>
-    <link rel="stylesheet" href="../assets/css/header_nav.css">
-    <link rel="stylesheet" href="../assets/css/padroes.css">
-    <link rel="stylesheet" href="../assets/css/content.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/documentacao.css">
+    <link rel="icon" href="../Assets/img/icons/png/potigol_icone.png"/>
+    <title>Potigol | Funções</title>
+    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Função, Funcões"/>
+    <link rel="stylesheet" href="../Assets/css/header_nav.css">
+    <link rel="stylesheet" href="../Assets/css/padroes.css">
+    <link rel="stylesheet" href="../Assets/css/content.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <link rel="stylesheet" href="../Assets/css/documentacao.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
         <div class="header-logo">
             <a href="../">
-                <img src="../assets/img/icons/svg/potigol_logo-no-stroke.svg" />
+                <img src="../Assets/img/icons/svg/potigol_logo-no-stroke.svg" />
                 <span>Potigol</span>
             </a>
         </div>
@@ -96,63 +96,60 @@
                     </span>
                 </button>
             </div>
-            <ul class="list-items-documentation">
+           <ul class="list-items-documentation">
                 <li class="item"><a href="variaveis.html">Variáveis</a></li>
                 <li class="item"><a href="operacoes.html">Operações</a></li>
                 <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
                 <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
                 <li class="item"><a href="estruturas_repeticao.html">Estruturas de Repetição</a></li>
-                <li class="item"><a href="funcoes.html">Funções</a></li>
+                <li class="item"><a class="item-active" href="funcoes.html">Funções</a></li>
                 <li class="item"><a href="parametros.html">Parâmetros</a></li>
-                <li class="item"><a class="item-active" href="programacao_orientada.html">Programação Orientada</a></li>
+                <li class="item"><a href="programacao_orientada.html">Programação Orientada</a></li>
                 <li class="item"><a href="programacao_funcional.html">Programação Funcional</a></li>
             </ul>
+            
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Programação Orientada a Objetos</h2>
-            <h2 class="sub-title-documentation">Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamente um atributo.</h2>
+            <h2 class="title-documentation">Funções</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Declaração de um Tipo (Classe)</h3>
+                <h3 class="title-section-documentation"></h3>
                 <div class="demonstration-documentation">
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="PROGRAM_OBJETOS_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="FUNCOES_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <pre class="multi-line-code-field-demonstration">
-<span class="comment"># Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamenteum atributo.</span>
+soma<span class="signal">(</span>x<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">, </span>y<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y  <span class="comment"># Declaração de função em uma linha </span>
+ 
+soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y           <span class="comment"># Agrupando parâmetros do mesmo tipo </span>
+ 
+rep<span class="signal">(</span>a<span class="signal">: </span><span class="method">Texto</span><span class="signal">, </span>n<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) =</span> x<span class="signal"> * </span>y     <span class="comment"># Funções com parâmetros de tipos diferentes </span>
 
-<span class="comment"># Declaração de um Tipo (Classe)</span>
+a<span class="signal">, </span>b <span class="signal">= </span><span class="method">leia_inteiro</span>
+c<span class="signal"> = </span>soma<span class="signal">(</span>a<span class="signal">, </span>b<span class="signal">)</span>                        <span class="comment"># Funções com parâmetros de tipos diferentes </span>
+<span class="signal">escreva </span><span class="caractere">"{</span>a<span class="caractere">} + {</span>b<span class="caractere">} = </span><span class="caractere">{</span>c<span class="caractere">}"</span>
 
-<span class="signal">tipo </span>«Tipo»
-  «<span class="signal">[</span>var<span class="signal">]</span>» «lista de atributos do construtor» <span class="signal">:</span> «tipo»
-  «<span class="signal">[</span>var<span class="signal">]</span>» «atributos» <span class="signal">=</span> «valor»
-  «métodos»
+soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">)<span class="signal">:</span></span><span class="method"> Inteiro</span><span class="signal"> =</span> x <span class="signal">+ </span>y  <span class="comment">#O tipo de retorno pode ser definido explicitamente</span>          
+
+soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal"></span><span class="signal">)</span>                   <span class="comment"># Declaração de função com corpo</span>
+c</span><span class="signal"> = </span> x <span class="signal">+ </span>y
+c                                     <span class="comment"># A palavra 'retorne' é opcional</span>
 <span class="signal">fim</span>
 
-«obj» <span class="signal">=</span> «Tipo»(«lista de valores do construtor»)
-«obj»<span class="signal">.</span>«atributo»
-«obj»<span class="signal">.</span>«método»
-                        </pre>
-                    </div>
-                </div>
-            </section>
-            <section class="section-documentation">
-                <h3 class="title-section-documentation">Exemplo</h3>
-                <div class="demonstration-documentation">
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="PROGRAM_OBJETOS_2"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <pre class="multi-line-code-field-demonstration">
-<span class="signal">tipo </span>Quadrado
-    lado<span class="signal">:</span><span class="method"> Real</span>
-    area<span class="signal">() = </span>lado <span class="signal">*</span> lado
-    perimetro<span class="signal">() = </span><span class="variable-type">4</span><span class="signal"> * </span>lado
-<span class="signal">fim</span>
+fatorial<span class="signal">(</span>n<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">): </span><span class="method"> Inteiro</span>        <span class="comment">#  Função recursiva (tipo de retorno é obrigatório)</span>
+    <span class="signal">se </span>n <span class="signal"><= </span><span class="variable-type">1 </span><span class="signal"> então</span>
+        <span class="variable-type">1</span>
+    <span class="signal">senão</span>
+        n<span class="signal"> * </span> fatorial<span class="signal">(</span>n <span class="signal">- </span><span class="variable-type">1</span><span class="signal">)</span>
+    <span class="signal">fim</span>
+<span class="signal">fim</span> 
+a<span class="signal"> = </span><span class="method">leia_inteiro</span>
+<span class="signal">escreva</span> <span class="caractere">"Fatorial de {</span>a<span class="caractere">} é {</span>fatorial<span class="signal">(</span>a<span class="signal">)</span> <span class="caractere">}"</span>           
 
-q1<span class="signal"> =</span> Quadrado<span class="signal">(</span><span class="variable-type">10</span><span class="signal">)</span>
-<span class="signal">escreva</span> q1<span class="signal">.</span>area
-<span class="signal">escreva</span> q1<span class="signal">.</span>perimetro
+f<span class="signal">(</span>a<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">)</span>
+    g<span class="signal">(</span>b<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">) =</span>b <span class="signal">* </span><span class="variable-type">2</span>              <span class="comment"># Função interna</span>
+    <span class="signal">retorne </span>g<span class="signal">(</span>a<span class="signal">) +</span><span class="variable-type"> 3</span>
+<span class="signal">fim</span>
                         </pre>
                     </div>
                 </div>
@@ -201,10 +198,10 @@ q1<span class="signal"> =</span> Quadrado<span class="signal">(</span><span clas
             Potigol - 2019
         </span>
     </footer>
-    <script src="../assets/js/functions.js"></script>
-    <script src="../assets/js/pesquisa_documentacao.js"></script>
-    <script src="../assets/js/menu.js"></script>
-    <script src="../assets/js/scroll.js"></script>
-    <script src="../assets/js/codigos.js"></script>
+    <script src="../Assets/js/functions.js"></script>
+    <script src="../Assets/js/pesquisa_documentacao.js"></script>
+    <script src="../Assets/js/menu.js"></script>
+    <script src="../Assets/js/scroll.js"></script>
+    <script src="../Assets/js/codigos.js"></script>
 </body>
 </html>

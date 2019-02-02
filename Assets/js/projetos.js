@@ -1,6 +1,6 @@
 var xmlProjetos = null;
 
-readTextFile("../assets/data/projetos.xml", function(text){
+readTextFile("../Assets/data/projetos.xml", function(text){
     if (window.DOMParser) {
         let parser = new DOMParser();
         xmlProjetos = parser.parseFromString(text,"text/xml");

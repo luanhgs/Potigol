@@ -4,21 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
-    <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Operações</title>
-    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Operações, Operação, Matemática"/>
-    <link rel="stylesheet" href="../assets/css/header_nav.css">
-    <link rel="stylesheet" href="../assets/css/padroes.css">
-    <link rel="stylesheet" href="../assets/css/content.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/documentacao.css">
+    <link rel="icon" href="../Assets/img/icons/png/potigol_icone.png"/>
+    <title>Potigol | Programação Funcional</title>
+    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Funcional, Lista, Listas"/>
+    <link rel="stylesheet" href="../Assets/css/header_nav.css">
+    <link rel="stylesheet" href="../Assets/css/padroes.css">
+    <link rel="stylesheet" href="../Assets/css/content.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <link rel="stylesheet" href="../Assets/css/documentacao.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
         <div class="header-logo">
             <a href="../">
-                <img src="../assets/img/icons/svg/potigol_logo-no-stroke.svg" />
+                <img src="../Assets/img/icons/svg/potigol_logo-no-stroke.svg" />
                 <span>Potigol</span>
             </a>
         </div>
@@ -98,250 +98,167 @@
             </div>
             <ul class="list-items-documentation">
                 <li class="item"><a href="variaveis.html">Variáveis</a></li>
-                <li class="item"><a class="item-active" href="operacoes.html">Operações</a></li>
+                <li class="item"><a href="operacoes.html">Operações</a></li>
                 <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
                 <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
                 <li class="item"><a href="estruturas_repeticao.html">Estruturas de Repetição</a></li>
                 <li class="item"><a href="funcoes.html">Funções</a></li>
                 <li class="item"><a href="parametros.html">Parâmetros</a></li>
                 <li class="item"><a href="programacao_orientada.html">Programação Orientada</a></li>
-                <li class="item"><a href="programacao_funcional.html">Programação Funcional</a></li>
+                <li class="item"><a class="item-active" href="programacao_funcional.html">Programação Funcional</a></li>
             </ul>
-            
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Operações</h2>
+            <h2 class="title-documentation">Programação Funcional</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Operações Aritméticas</h3>
-
+                <h3 class="title-section-documentation">Valores (Constantes)</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Soma</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">5</span> <span class="signal">+</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: 8</span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Subtração</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="OPERA_2"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="variable-type">5</span> <span class="signal">-</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: 2</span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Multiplicação</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="OPERA_3"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="variable-type">5</span> <span class="signal">*</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: 15</span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Divisão Real</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="OPERA_4"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="variable-type">5</span> <span class="signal">/</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: 1.6667</span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Divisão Inteira</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="OPERA_5"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="variable-type">5</span> <span class="signal">div</span> <span class="variable-type">3</span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Resto da Divisão</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="OPERA_6"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="variable-type">5</span> <span class="signal">mod</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: 2</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+nome<span class="signal"> = </span><span class="caractere">"potigol"</span>
+                        </pre>
                     </div>
                 </div>
             </section>
-
             <section class="section-documentation">
-                <h3 class="title-section-documentation">Operações Lógicas e Relacionais</h3>
-
+                <h3 class="title-section-documentation">Listas</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Uso do "e"</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_7"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_2"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">verdadeiro</span> <span class="signal">e</span> <span class="variable-type">falso</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: falso</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+lista1<span class="signal">= [</span><span class="variable-type">1</span><span class="signal">, </span><span class="variable-type">2</span><span class="signal">, </span><span class="variable-type">3</span><span class="signal">,</span><span class="variable-type"> 4</span><span class="signal">]</span>
+lista2<span class="signal">= </span><span class="variable-type">0</span><span class="signal">::</span>lista1
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Operações com listas (filter, fold, map)</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Uso do "ou"</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_8"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_3"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">verdadeiro</span> <span class="signal">ou</span> <span class="variable-type">falso</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: verdadeiro</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+numero<span class="signal">= [</span><span class="variable-type">1</span><span class="signal">, </span><span class="variable-type">2</span><span class="signal">, </span><span class="variable-type">3</span><span class="signal">,</span><span class="variable-type"> 4</span><span class="signal">,</span><span class="variable-type"> 5</span><span class="signal">, </span><span class="variable-type">6</span><span class="signal">,</span><span class="variable-type"> 7</span><span class="signal">, </span><span class="variable-type">8</span><span class="signal">]</span>
+pares<span class="signal"> = </span>numeros<span class="signal">.</span><span class="method">selecione</span><span class="signal">(</span>n<span class="signal"> => </span>n<span class="signal"> mod </span><span class="variable-type">2</span><span class="signal"> ==</span><span class="variable-type"> 0</span><span class="signal">)</span>  <span class="comment"> # filtro</span>
+soma<span class="signal"> =</span> numeros<span class="signal">.</span><span class="method">injete</span><span class="signal">(</span><span class="variable-type">0</span><span class="signal">)((</span>a<span class="signal">,</span>b<span class="signal">) => </span>a <span class="signal">+</span> b<span class="signal">)</span>      <span class="comment"> # fold</span>
+dobro<span class="signal"> =</span> numeros<span class="signal">.</span><span class="method">mapeie</span><span class="signal">(</span>x<span class="signal">) => </span>n <span class="signal">*</span> 2<span class="signal">)</span>            <span class="comment"># map</span>
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Expressões lambda</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Uso do "não"</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_9"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_4"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="signal">não</span> <span class="variable-type">verdadeiro</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: falso</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+x<span class="signal"> = (</span>a<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) => </span>a<span class="vsignal"> * <span class="variable-type">2</span>
+<span class="signal">escreva</span> x<span class="signal">(</span><span class="variable-type">4</span><span class="signal">)</span>
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+             <section class="section-documentation">
+                <h3 class="title-section-documentation">“List Comprehension”</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Teste de igualdade</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_10"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_5"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">2</span> <span class="signal">==</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: falso</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+y<span class="signal"> = para</span> i<span class="signal"> de </span><span class="variable-type">1</span><span class="signal"> até</span><span class="variable-type"> 10</span>
+         j<span class="signal"> de</span> i <span class="signal">+</span><span class="variable-type"> 1 </span><span class="signal">até </span><span class="variable-type">10 </span><span class="signal">gere</span>
+                i<span class="signal">+</span>j
+    <span class="signal">fim</span>
+<span class="signal">escreva </span>y
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Funções de Alta ordem</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Teste de desigualdade</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_11"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_6"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">2</span> <span class="signal"><></span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: verdadeiro</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+f<span class="signal">(</span>g<span class="signal">: </span><span class="method">Inteiro</span><span class="signal"> => </span><span class="method">Inteiro</span><span class="signal">,</span> a<span class="signal">:</span><span class="method">Inteiro</span><span class="signal">) = </span>g<span class="signal">(</span>a<span class="signal">)</span>
+sucessor<span class="signal">(</span>n<span class="signal">:</span><span class="method">Inteiro</span><span class="signal">) = </span>n<span class="signal"> + </span><span class="variable-type">1</span>
+<span class="signal">escreva</span> f<span class="signal">(</span>sucessor<span class="signal">, </span><span class="variable-type">5</span><span class="signal">)</span>
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Currying</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Menor</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_12"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_7"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">2</span> <span class="signal"><</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: verdadeiro</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+soma<span class="signal">(</span>a<span class="signal">:</span><span class="method">Inteiro</span><span class="signal">((</span>b<span class="signal">:</span><span class="method">Inteiro</span><span class="signal">) =></span> a <span class="signal">+</span> b<span class="signal">)</span>
+<span class="signal">escreva </span>soma<span class="signal">(</span><span class="v">2</span><span class="signal">)(</span><span class="variable-type">3</span><span class="signal">)</span>
+suc = soma<span class="signal">(</span><span class="variable-type">1</span><span class="signal">)</span>
+<span class="signal">escreva</span> suc<span class="signal">(</span><span class="variable-type">4</span><span class="signal">)</span>
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Recursão em cauda otimizada</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Menor ou igual</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_13"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_8"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">2</span> <span class="signal"><=</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: verdadeiro</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+h<span class="signal">(</span>a<span class="signal">,</span> cont<span class="signal">:</span><span class="method">Inteiro</span><span class="signal">):</span><span class="method">Inteiro</span><span class="signal"> = escolha</span> a
+        <span class="signal">caso</span><span class="variable-type"> 0 </span><span class="signal">=></span>cont
+        <span class="signal">caso</span> n<span class="signal"> => </span> h<span class="signal">(</span>a<span class="signal"> - </span><span class="variable-type">1</span><span class="signal">,</span> cont <span class="signal">+</span><span class="variable-type">1</span><span class="signal">)</span>
+<span class="signal">fim</span>
+<span class="signal">escreva </span>h<span class="signal">(</span><span class="variable-type">1000</span><span class="signal">,</span><span class="variable-type">0</span><span class="signal">)</span>
+                        </pre>
                     </div>
                 </div>
-
+            </section>
+             <section class="section-documentation">
+                <h3 class="title-section-documentation">Casamento de Padrões</h3>
                 <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Maior</div>
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="OPERA_14"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="PROGRAM_FUNCIONAL_9"><i class="fas fa-clone"></i>copiar</button>
                         </div>
-                        <span>
-                            <span class="variable-type">2</span> <span class="signal">></span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: falso</span>
-                            </span>
-                        </span>
+                        <pre class="multi-line-code-field-demonstration">
+<span class="comment">#QuickSort</span>
+quicksort<span class="signal">(</span>num<span class="signal">:</span> Lista<span class="signal">[</span><span class="method">Inteiro</span><span class="signal">]):</span> Lista<span class="signal">[</span><span class="method">Inteiro</span><span class="signal">] =</span>
+        <span class="signal">escolha</span> num
+            <span class="signal">caso []  =>  []</span>
+            <span class="signal">caso</span> pivo<span class="signal"> :: </span>resto<span class="signal"> =></span>
+                    menores <span class="signal">= </span> resto<span class="signal">.</span><span class="method">selecione</span><span class="signal">( _ <= </span> pivo
+                    maiores <span class="signal">= </span>resto<span class="signal">.</span><span class="method">selecione</span><span class="signal">( _ <= </span> pivo
+                    quicksort<span class="signal">(</span>menores<span class="signal">) +</span> pivo<span class="signal"> :: </span> quicksort<span class="signal">(</span> maiores<span class="signal">)</span>
+        <span class="signal">fim</span>
+<span class="signal">escreva</span><span class="caractere"> "Digite alguns números separados or espaço"</span>
+numeros<span class="signal"> =</span><span class="method"> leia_inteiros</span><span class="signal">(</span><span class="signal">" </span><span class="signal">"</span><span class="signal">)</span>
+<span class="signal">escreva</span><span class="caractere"> "Os números ordenados: "</span>
+<span class="signal">escreva</span> quicksort<span class="signal">(</span>numeros<span class="signal">)</span>
+                     </pre>
                     </div>
                 </div>
-
-                <div class="demonstration-documentation">
-                    <div class="title-demonstration-documentation">Maior ou igual</div>
-                    <div class="code-field-demonstration">
-                        <div class="top-copy">
-                            <button data-codigo-id="OPERA_15"><i class="fas fa-clone"></i>copiar</button>
-                        </div>
-                        <span>
-                            <span class="variable-type">2</span> <span class="signal">>=</span> <span class="variable-type">3</span>
-                            <span class="line-down">
-                                <span class="comment">#Resultado: falso</span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-  
             </section>
         </section>
+    </section>
     </main>
     <footer id="footer">
         <div class="footer-content">
@@ -385,10 +302,10 @@
             Potigol - 2019
         </span>
     </footer>
-    <script src="../assets/js/functions.js"></script>
-    <script src="../assets/js/pesquisa_documentacao.js"></script>
-    <script src="../assets/js/menu.js"></script>
-    <script src="../assets/js/scroll.js"></script>
-    <script src="../assets/js/codigos.js"></script>
+    <script src="../Assets/js/functions.js"></script>
+    <script src="../Assets/js/pesquisa_documentacao.js"></script>
+    <script src="../Assets/js/menu.js"></script>
+    <script src="../Assets/js/scroll.js"></script>
+    <script src="../Assets/js/codigos.js"></script>
 </body>
 </html>

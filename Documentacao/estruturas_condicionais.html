@@ -4,21 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
-    <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Funções</title>
-    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Função, Funcões"/>
-    <link rel="stylesheet" href="../assets/css/header_nav.css">
-    <link rel="stylesheet" href="../assets/css/padroes.css">
-    <link rel="stylesheet" href="../assets/css/content.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/documentacao.css">
+    <link rel="icon" href="../Assets/img/icons/png/potigol_icone.png"/>
+    <title>Potigol | Estruturas Condicionais</title>
+    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Condição, Condicionais, Se, Escolha"/>
+    <link rel="stylesheet" href="../Assets/css/header_nav.css">
+    <link rel="stylesheet" href="../Assets/css/padroes.css">
+    <link rel="stylesheet" href="../Assets/css/content.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <link rel="stylesheet" href="../Assets/css/documentacao.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
         <div class="header-logo">
             <a href="../">
-                <img src="../assets/img/icons/svg/potigol_logo-no-stroke.svg" />
+                <img src="../Assets/img/icons/svg/potigol_logo-no-stroke.svg" />
                 <span>Potigol</span>
             </a>
         </div>
@@ -96,13 +96,13 @@
                     </span>
                 </button>
             </div>
-           <ul class="list-items-documentation">
+            <ul class="list-items-documentation">
                 <li class="item"><a href="variaveis.html">Variáveis</a></li>
                 <li class="item"><a href="operacoes.html">Operações</a></li>
                 <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
-                <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
+                <li class="item"><a class="item-active" href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
                 <li class="item"><a href="estruturas_repeticao.html">Estruturas de Repetição</a></li>
-                <li class="item"><a class="item-active" href="funcoes.html">Funções</a></li>
+                <li class="item"><a href="funcoes.html">Funções</a></li>
                 <li class="item"><a href="parametros.html">Parâmetros</a></li>
                 <li class="item"><a href="programacao_orientada.html">Programação Orientada</a></li>
                 <li class="item"><a href="programacao_funcional.html">Programação Funcional</a></li>
@@ -110,45 +110,95 @@
             
         </section>
         <section class="content-documentation">
-            <h2 class="title-documentation">Funções</h2>
+            <h2 class="title-documentation">Estruturas Condicionais</h2>
             <section class="section-documentation">
-                <h3 class="title-section-documentation"></h3>
+                <h3 class="title-section-documentation">Se</h3>
                 <div class="demonstration-documentation">
                     <div class="code-field-demonstration">
                         <div class="top-copy">
-                            <button data-codigo-id="FUNCOES_1"><i class="fas fa-clone"></i>copiar</button>
+                            <button data-codigo-id="ESTR_CONDICIONAIS_1"><i class="fas fa-clone"></i>copiar</button>
                         </div>
                         <pre class="multi-line-code-field-demonstration">
-soma<span class="signal">(</span>x<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">, </span>y<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y  <span class="comment"># Declaração de função em uma linha </span>
- 
-soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">) =</span> x <span class="siganl">+ </span>y           <span class="comment"># Agrupando parâmetros do mesmo tipo </span>
- 
-rep<span class="signal">(</span>a<span class="signal">: </span><span class="method">Texto</span><span class="signal">, </span>n<span class="signal">:</span><span class="method"> Inteiro</span><span class="signal">) =</span> x<span class="signal"> * </span>y     <span class="comment"># Funções com parâmetros de tipos diferentes </span>
+x <span class="signal">=</span> <span class="method">leia_inteiro</span>
 
-a<span class="signal">, </span>b <span class="signal">= </span><span class="method">leia_inteiro</span>
-c<span class="signal"> = </span>soma<span class="signal">(</span>a<span class="signal">, </span>b<span class="signal">)</span>                        <span class="comment"># Funções com parâmetros de tipos diferentes </span>
-<span class="signal">escreva </span><span class="caractere">"{</span>a<span class="caractere">} + {</span>b<span class="caractere">} = </span><span class="caractere">{</span>c<span class="caractere">}"</span>
-
-soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">)<span class="signal">:</span></span><span class="method"> Inteiro</span><span class="signal"> =</span> x <span class="signal">+ </span>y  <span class="comment">#O tipo de retorno pode ser definido explicitamente</span>          
-
-soma<span class="signal">(</span>x<span class="signal">, </span>y<span class="signal">: </span><span class="method">Inteiro</span><span class="signal"></span><span class="signal">)</span>                   <span class="comment"># Declaração de função com corpo</span>
-c</span><span class="signal"> = </span> x <span class="signal">+ </span>y
-c                                     <span class="comment"># A palavra 'retorne' é opcional</span>
+<span class="comment"># se ... então ... fim</span>
+<span class="signal">se</span> x <span class="signal">></span> <span class="variable-type">5</span> <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que cinco."</span> 
 <span class="signal">fim</span>
 
-fatorial<span class="signal">(</span>n<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">): </span><span class="method"> Inteiro</span>        <span class="comment">#  Função recursiva (tipo de retorno é obrigatório)</span>
-    <span class="signal">se </span>n <span class="signal"><= </span><span class="variable-type">1 </span><span class="signal"> então</span>
-        <span class="variable-type">1</span>
-    <span class="signal">senão</span>
-        n<span class="signal"> * </span> fatorial<span class="signal">(</span>n <span class="signal">- </span><span class="variable-type">1</span><span class="signal">)</span>
-    <span class="signal">fim</span>
-<span class="signal">fim</span> 
-a<span class="signal"> = </span><span class="method">leia_inteiro</span>
-<span class="signal">escreva</span> <span class="caractere">"Fatorial de {</span>a<span class="caractere">} é {</span>fatorial<span class="signal">(</span>a<span class="signal">)</span> <span class="caractere">}"</span>           
+<span class="comment"># se ... então ... senão ... fim</span>
+<span class="signal">se</span> x <span class="signal">></span> <span class="variable-type">5</span> <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que cinco."</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"Menor ou igual a cinco."</span>
+<span class="signal">fim</span>
 
-f<span class="signal">(</span>a<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">)</span>
-    g<span class="signal">(</span>b<span class="signal">: </span><span class="method">Inteiro</span><span class="signal">) =</span>b <span class="signal">* </span><span class="variable-type">2</span>              <span class="comment"># Função interna</span>
-    <span class="signal">retorne </span>g<span class="signal">(</span>a<span class="signal">) +</span><span class="variable-type"> 3</span>
+<span class="signal">se</span> <span class="variable-type">verdadeiro</span> <span class="signal">então</span>               <span class="comment"># escreva "verdadeiro"</span>
+    <span class="signal">escreva</span> <span class="caractere">"verdadeiro"</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"falso"</span>
+<span class="signal">fim</span>
+
+<span class="signal">se</span> <span class="variable-type">falso</span> <span class="signal">então</span>                    <span class="comment"># escreva "falso"</span>
+    <span class="signal">escreva</span> <span class="caractere">"verdadeiro"</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"falso"</span>
+<span class="signal">fim</span>
+
+<span class="comment"># se ... então ... senãose ... senão ... fim</span>
+<span class="signal">se</span> x <span class="signal">></span> 8 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que oito."</span>
+<span class="signal">senãose</span> x <span class="signal">></span> 6 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que seis."</span>
+<span class="signal">senãose</span> x <span class="signal">></span> 4 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que quatro."</span>
+<span class="signal">senãose</span> x <span class="signal">></span> 2 <span class="signal">então</span>
+    <span class="signal">escreva</span> <span class="caractere">"Maior do que dois."</span>
+<span class="signal">senão</span>
+    <span class="signal">escreva</span> <span class="caractere">"Menor ou igual a dois."</span>
+<span class="signal">fim</span>
+
+<span class="comment"># usando se como uma expressão</span>
+a <span class="signal">= se</span> x <span class="signal">mod</span> <span class="variable-type">2</span> <spab class="signal">==</spab> <span class="variable-type">0</span> <span class="signal">então</span> <span class="caractere">"par"</span> <span class="signal">senão</span> <span class="caractere">"ímpar"</span> <span class="signal">fim</span>
+
+maior <span class="signal">= se</span> a <span class="signal">>=</span> b <span class="signal">e</span> a <span class="signal">>=</span> c <span class="signal">então</span> a <span class="signal">senãose</span> b <span class="signal">></span> c <span class="signal">então</span> b <span class="signal">senão</span> c <span class="signal">fim</span>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Escolha</h3>
+                <div class="demonstration-documentation">
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="ESTR_CONDICIONAIS_2"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <pre class="multi-line-code-field-demonstration">
+x = <span class="method">leia_inteiro</span>
+<span class="signal">escolha</span> x
+    <span class="signal">caso</span> <span class="variable-type">1</span> <span class="signal">=> escreva</span> <span class="caractere">"Um"</span>                       <span class="comment"># se x == 1</span>
+    <span class="signal">caso</span> <span class="variable-type">2</span> <span class="signal">=> escreva</span> <span class="caractere">"Dois"</span>                     <span class="comment"># se x <> 1 e x == 2</span>
+    <span class="signal">caso</span> <span class="variable-type">3</span> <span class="signal">=> escreva</span> <span class="caractere">"Três"</span>                     <span class="comment"># se x <> 1 e x <> 2 e x == 3</span>
+    <span class="signal">caso</span> <span class="signal">_ => escreva</span> <span class="caractere">"Outro Valor"</span>        <span class="comment"># se x <> 1 e x <> 2 e x <> 3</span>
+<span class="signal">fim</span>
+
+<span class="comment"># escolha com condições</span>
+<span class="signal">escolha</span> x
+    <span class="signal">caso</span> n <span class="signal">se</span> n <span class="signal"><</span> <span class="variable-type">0</span>               <span class="signal">=> escreva</span> <span class="caractere">"{<span class="w">n</span>} é negativo"</span>
+    <span class="signal">caso</span> n <span class="signal">se</span> n <span class="signal">mod</span> <span class="variable-type">2</span> <span class="signal">==</span> <span class="variable-type">0</span> <span class="signal">=> escreva</span> <span class="caractere">"{<span class="w">n</span>} é par"</span>
+    <span class="signal">caso</span> n                              <span class="signal">=> escreva</span> <span class="caractere">"{<span class="w">n</span>} é ímpar"</span>
+<span class="signal">fim</span>
+
+<span class="comment"># usando escolha como uma expressão</span>
+é_zero <span class="signal">= escolha</span> x
+    <span class="sigal">caso</span> <span class="variable-type">0</span> <span class="signal">=></span> <span class="variable-type">verdadeiro</span>
+    caso <span class="signal">_ =></span> <span class="variable-type">falso</span>
+<span class="signal">fim</span>
+
+sinal <span class="signal">= escolha</span> x               <span class="comment"># escolha retorna um número: -1, 0 ou 1</span>
+    <span class="signal">caso</span> n <span class="signal">se</span> n < 0 => <span class="variable-type">-1</span>
+    <span class="signal">caso</span> n <span class="signal">se</span> n > 0 =>  <span class="variable-type">1</span>
+    <span class="signal">caso</span> <span class="signal">_                =></span>  <span class="variable-type">0</span>
 <span class="signal">fim</span>
                         </pre>
                     </div>
@@ -198,10 +248,10 @@ f<span class="signal">(</span>a<span class="signal">: </span><span class="method
             Potigol - 2019
         </span>
     </footer>
-    <script src="../assets/js/functions.js"></script>
-    <script src="../assets/js/pesquisa_documentacao.js"></script>
-    <script src="../assets/js/menu.js"></script>
-    <script src="../assets/js/scroll.js"></script>
-    <script src="../assets/js/codigos.js"></script>
+    <script src="../Assets/js/functions.js"></script>
+    <script src="../Assets/js/pesquisa_documentacao.js"></script>
+    <script src="../Assets/js/menu.js"></script>
+    <script src="../Assets/js/scroll.js"></script>
+    <script src="../Assets/js/codigos.js"></script>
 </body>
 </html>

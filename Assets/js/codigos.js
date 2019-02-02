@@ -1,7 +1,7 @@
 var xmlCodigos = null;
 
 //ler e converter xml
-readTextFile("../assets/data/codigos.xml", function(text){
+readTextFile("../Assets/data/codigos.xml", function(text){
     if (window.DOMParser) {
         let parser = new DOMParser();
         xmlCodigos = parser.parseFromString(text,"text/xml");

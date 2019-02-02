@@ -4,20 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FC814A"/>
-    <link rel="icon" href="../assets/img/icons/png/potigol_icone.png"/>
-    <title>Potigol | Projetos</title>
-    <link rel="stylesheet" href="../assets/css/header_nav.css">
-    <link rel="stylesheet" href="../assets/css/padroes.css">
-    <link rel="stylesheet" href="../assets/css/content.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/projetos.css">
+    <link rel="icon" href="../Assets/img/icons/png/potigol_icone.png"/>
+    <title>Potigol | Estruturas de Repetição</title>
+    <meta name="keywords" content="Potigol, Linguagem, Programação, IFRN, Documentação, Repetição, Estrutura, Edtruturas, Para, Enquanto"/>
+    <link rel="stylesheet" href="../Assets/css/header_nav.css">
+    <link rel="stylesheet" href="../Assets/css/padroes.css">
+    <link rel="stylesheet" href="../Assets/css/content.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <link rel="stylesheet" href="../Assets/css/documentacao.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
-        <div class="header-logo page">
+        <div class="header-logo">
             <a href="../">
-                <img src="../assets/img/icons/svg/potigol_logo-no-stroke.svg" />
+                <img src="../Assets/img/icons/svg/potigol_logo-no-stroke.svg" />
                 <span>Potigol</span>
             </a>
         </div>
@@ -55,10 +56,10 @@
                     <a href="../">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../Documentacao/variaveis.html">Documentação</a>
+                    <a class="active-list-item" href="variaveis.html">Documentação</a>
                 </li>
                 <li class="nav-item">
-                    <a class="active-list-item" href="../Projetos/">Projetos</a>
+                    <a href="../Projetos/">Projetos</a>
                 </li>
             </ul>
             <div class="group-social-icons">
@@ -85,41 +86,97 @@
         </nav>
         <div class="header-overlay"></div>
     </header>
-    <main id="content" class="projetos-all">
-        <section class="projetos">
-            <a tabindex="0" style="background-image: url('../assets/img/projetos/caos-game.png')" data-codigo-projeto="CAOS-GAME" class="box-projeto before-animate-on-scroll">
-                <div class="name-proj">Caos Game - Rogue Like 2d</div>
-                <div class="info-ico"><span class="ico"></span></div>
-            </a>
-            <a tabindex="0" style="background-image: url('../assets/img/projetos/potigame.png')" data-codigo-projeto="POTIGAME" class="box-projeto before-animate-on-scroll">
-                <div class="name-proj">PotiGame</div>
-                <div class="info-ico"><span class="ico"></span></div>
-            </a>
-            <a tabindex="0" style="background-image: url('../assets/img/projetos/robot-vs-zombies.png')" data-codigo-projeto="BOBOT-VS-ZOMBIES" class="box-projeto before-animate-on-scroll">
-                <div class="name-proj">Robot Vs Zombies</div>
-                <div class="info-ico"><span class="ico"></span></div>
-            </a>
-        </section>
-        <div id="view-projeto">
-            <div class="projeto">
-                <button class="btn-close-projeto">
-                    <span class="line-btn"></span>
-                    <span class="line-btn"></span>
+    <main id="content">
+        <section class="search-side">
+            <div class="search-box">
+                <input type="text" name="" id="" placeholder="Pesquisar..">
+                <button class="btn-show-items" type="button">
+                    <span>
+                        <i class="fas fa-bars"></i>
+                    </span>
                 </button>
-                <section class="img-title-projeto">
-                    <img src="" alt="" srcset="">
-                    <span class="title"></span>
-                </section>
-                <section class="desc">
-                    <span></span>
-                </section>
-                <section class="opt">
-                    <a target="_blank" href="" class="btn-opt btn-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </section>
             </div>
-        </div>
+            <ul class="list-items-documentation">
+                <li class="item"><a href="variaveis.html">Variáveis</a></li>
+                <li class="item"><a href="operacoes.html">Operações</a></li>
+                <li class="item"><a href="entrada_e_saida.html">Entrada e Saída</a></li>
+                <li class="item"><a href="estruturas_condicionais.html">Estruturas Condicionais</a></li>
+                <li class="item"><a class="item-active" href="estruturas_repeticao.html">Estruturas de Repetição</a></li>
+                <li class="item"><a href="funcoes.html">Funções</a></li>
+                <li class="item"><a href="parametros.html">Parâmetros</a></li>
+                <li class="item"><a href="programacao_orientada.html">Programação Orientada</a></li>
+                <li class="item"><a href="programacao_funcional.html">Programação Funcional</a></li>
+            </ul>
+            
+        </section>
+        <section class="content-documentation">
+            <h2 class="title-documentation">Estruturas de Repetição</h2>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Para</h3>
+                <div class="demonstration-documentation">
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="ESTR_REPETICAO_1"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <pre class="multi-line-code-field-demonstration">
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">faça</span>                        <span class="comment"># escreve os números de 1 a 10</span>
+    <span class="signal">escreva</span> i
+<span class="signal">fim</span>
+
+<span class="signal">var</span> soma <span class="signal">:=</span> <span class="variable-type">0</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">faça</span>                        <span class="comment"># soma os números de 1 a 10</span>
+    soma <span class="signal">:=</span> soma<span class="signal"> +</span> i
+<span class="signal">fim</span>
+    <span class="signal">escreva</span> <span class="caractere">"A soma é {</span>soma<span class="caractere">}."</span>
+
+<span class="signal">var</span> soma <span class="signal">:=</span> <span class="variable-type">0</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">faça</span>                       <span class="comment"># escreve os números ímpares de 1 a 10</span>
+    <span class="signal">escreva</span> i
+<span class="signal">fim</span>
+
+<span class="comment"># Para decrescente</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">1 </span><span class="signal">passo -</span><span class="variable-type">1 </span><span class="signal">faça</span>          <span class="comment"># escreve os númeos de 10 a 1</span>
+    <span class="signal">escreva</span> i
+<span class="signal">fim</span>
+
+<span class="comment"># Para com mais um gerador</span>
+<span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">4 </span><span class="signal">,</span>
+    j <span class="signal">de </span><span class="variable-type">1</span><span class="signal"> até </span><span class="variable-type">3</span><span class="signal"> faça</span>                              <span class="comment"># escreve a tabuada de {1..4} x {1..3}</span>
+    <span class="signal">escreva</span> <span class="caractere">"{</span>i<span class="caractere">} * {</span>j<span class="caractere">} == {</span>i<span class="signal"> * </span>j<span class="caractere">}"</span>
+<span class="signal">fim</span>
+
+<span class="comment"># Para com listas</span>
+cores<span class="signal"> = [</span><span class="caractere">"azul"</span><span class="signal">,</span> <span class="caractere">"vermelho"</span><span class="signal">, </span><span class="caractere">"verde"</span><span class="signal">]</span>
+<span class="signal">para</span> cor<span class="signal"> em</span> cores<span class="signal"> faça</span>
+    <span class="signal">escreva</span> cor
+<span class="signal">fim</span>
+
+<span class="comment"># Para gerando uma lista</span>
+numeros<span class="signal"> = </span><span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">5 </span><span class="signal">gere</span> i <span class="signal">fim</span>                              <span class="comment">#  [1, 2, 3, 4, 5]</span>
+
+pares<span class="signal"> = </span><span class="signal">para</span> i <span class="signal">de</span> <span class="variable-type">1</span> <span class="signal">até </span><span class="variable-type">10 </span><span class="signal">se</span> i <span class="signal">mod </span>2 <span class="signal"> == </span>0 <span class="signal">gere </span> i <span class="signal">fim</span>    <span class="comment">#  [2, 4, 5, 6, 8, 10]</span>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <section class="section-documentation">
+                <h3 class="title-section-documentation">Enquanto</h3>
+                <div class="demonstration-documentation">
+                    <div class="code-field-demonstration">
+                        <div class="top-copy">
+                            <button data-codigo-id="ESTR_REPETICAO_2"><i class="fas fa-clone"></i>copiar</button>
+                        </div>
+                        <pre class="multi-line-code-field-demonstration">
+<span class="signal">var</span> i <span class="signal">:=</span> <span class="variable-type">0</span>
+    <span class="signal">enquanto</span> i <span class="signal"><=</span><span class="variable-type">10</span><span class="signal"> faça</span>
+        <span class="signal">escreva</span> i
+        i<span class="signal"> := </span> i <span class="signal">+ </span><span class="variable-type">1</span>
+<span class="signal">fim</span>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+    </section>
     </main>
     <footer id="footer">
         <div class="footer-content">
@@ -149,7 +206,7 @@
                         Menu
                     </li>
                     <li><a href="../">Inicio</a></li>
-                    <li><a href="../Documentacao/variaveis.html">Documentação</a></li>
+                    <li><a href="variaveis.html">Documentação</a></li>
                     <li><a href="../Projetos/">Projetos</a></li>
                 </ul>
             </div>
@@ -163,9 +220,10 @@
             Potigol - 2019
         </span>
     </footer>
-    <script src="../assets/js/functions.js"></script>
-    <script src="../assets/js/menu.js"></script>
-    <script src="../assets/js/scroll.js"></script>
-    <script src="../assets/js/projetos.js"></script>
+    <script src="../Assets/js/functions.js"></script>
+    <script src="../Assets/js/pesquisa_documentacao.js"></script>
+    <script src="../Assets/js/menu.js"></script>
+    <script src="../Assets/js/scroll.js"></script>
+    <script src="../Assets/js/codigos.js"></script>
 </body>
 </html>
