@@ -261,3 +261,72 @@
         width: 90%;
     }
 }
+
+/*Dica sobre a existência do menu*/
+#menu-tip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: hidden;
+}
+#menu-tip:after{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 10000px #000000a6;
+    border-radius: 50%;
+    right: 9px;
+    top: -4px;
+}
+#menu-tip #menu-tip-message{
+    position: absolute;
+    z-index: 1;
+    right: 90px;
+    top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+}
+#menu-tip #menu-tip-message span{
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px;
+}
+#menu-tip #menu-tip-message button{
+    display: block;
+    width: 100px;
+    height: 35px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: #FC814A;
+    color: white;
+}
+
+@media screen and (max-width: 750px){
+    #menu-tip:after{
+        width: 70px;
+        height: 70px;
+        right: 1px;
+    }
+    #menu-tip #menu-tip-message{
+        right: 80px;
+    }
+}
+
+.inicial-page-tip{
+    overflow: hidden;
+}
+
+.menu-tip-ok{
+    overflow: auto;
+}
+.menu-tip-ok #menu-tip{
+    display: none !important;
+}
