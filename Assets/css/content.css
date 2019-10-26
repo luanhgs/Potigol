@@ -318,6 +318,9 @@
 #menu-tip #tip-timer img{
     width: 20px;
     height: 20px;
+    opacity: 0;
+}
+.start-min-tip #tip-timer img{
     animation: showicon 3s linear 1 forwards;
 }
 .start-min-tip #menu-tip #tip-timer span:nth-child(2){
