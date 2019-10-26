@@ -1,12 +1,15 @@
 window.onload = function(){
     if(getCookie("menutip") === "true")
         document.body.classList.add("menu-tip-ok");
+    else{
+        //a dica(menu) vai ficar ok a partir daqui
+        document.body.classList.add("start-min-tip");
+        setTimeout(function(){
+            createCookie("menutip", "true", 360);
+            document.body.classList.add("menu-tip-ok");
+        }, 3500);
+    }
 }
-
-document.querySelector("#btn-menu-getit").addEventListener("click", function(){
-    createCookie("menutip", "true", 360);
-    document.body.classList.add("menu-tip-ok");
-});
 
 //criar cookie
 function createCookie (name, value, days) {

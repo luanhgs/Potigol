@@ -290,23 +290,80 @@
     padding: 10px;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
-#menu-tip #menu-tip-message span{
+#menu-tip #menu-tip-message > span{
     background-color: white;
     text-transform: uppercase;
     font-size: 13px;
     padding: 10px;
 }
-#menu-tip #menu-tip-message button{
-    display: block;
-    width: 100px;
-    height: 35px;
-    border: none;
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-size: 10px;
-    background-color: #FC814A;
-    color: white;
+#menu-tip #tip-timer{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-tip #tip-timer span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #ffffff;
+}
+#menu-tip #tip-timer img{
+    width: 20px;
+    height: 20px;
+    animation: showicon 3s linear 1 forwards;
+}
+.start-min-tip #menu-tip #tip-timer span:nth-child(2){
+    animation: frotation 1s linear 0s 1 forwards;
+}
+.start-min-tip #menu-tip #tip-timer span:nth-child(3){
+    animation: frotation 1s linear 0s 1 forwards,
+               srotation 1s linear 1s 1 forwards;
+}
+.start-min-tip #menu-tip #tip-timer span:nth-child(4){
+    animation: frotation 1s linear 0s 1 forwards,
+               srotation 1s linear 1s 1 forwards,
+               trotation 1s linear 2s 1 forwards;
+}
+
+@keyframes showicon{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes frotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+@keyframes srotation{
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+@keyframes trotation{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(270deg);
+    }
 }
 
 @media screen and (max-width: 750px){
