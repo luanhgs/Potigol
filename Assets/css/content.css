@@ -146,9 +146,8 @@
     /*height: fit-content;*/
     position: relative;
     /*box-shadow: 2px 3px 8px #c3b7b7;*/
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     transition: all 200ms ease;
-
     width: 95%;
     display: flex;
     flex-flow: column;

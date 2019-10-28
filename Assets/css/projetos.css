@@ -4,10 +4,9 @@
     flex-flow: row;
 }
 .projetos-cards{
-    margin: 40px 0;
+    /*margin: 40px 0;*/
     width: 90%;
     height: auto;
-    display: grid;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-auto-rows: 250px;

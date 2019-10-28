@@ -121,13 +121,16 @@
 #header .btn-menu-open .menu-line-burger:nth-of-type(4){
     opacity: 0;
 }
-    #header .btn-menu-open:hover .t{
+    #header .btn-menu-open:hover .t,
+    #header .btn-menu-open:focus .t{
         opacity: 0;
     }
-    #header .btn-menu-open:hover .menu-line-burger:nth-of-type(2){
+    #header .btn-menu-open:hover .menu-line-burger:nth-of-type(2),
+    #header .btn-menu-open:focus .menu-line-burger:nth-of-type(2){
         transform: translateY(-15px);
     }
-    #header .btn-menu-open:hover .menu-line-burger:nth-of-type(4){
+    #header .btn-menu-open:hover .menu-line-burger:nth-of-type(4),
+    #header .btn-menu-open:focus .menu-line-burger:nth-of-type(4){
         opacity: 1;
         width: 35px;
         transform: translateX(-5px);
@@ -333,8 +336,9 @@
     #header #nav{
         width: 100%;
         background: #FC814A;
+        /*
         background: -webkit-linear-gradient(to right, #FC814A, #bf5533); 
-        background: linear-gradient(to right, #FC814A, #bf5533); 
+        background: linear-gradient(to right, #FC814A, #bf5533); */
 
     }
     .menu-line-burger,
